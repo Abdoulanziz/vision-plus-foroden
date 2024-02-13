@@ -1,0 +1,43 @@
+.btn {
+    border-radius: .4rem;
+    border: none;
+}
+
+textarea,
+input[type='text'],
+input[type='email'],
+input[type='file'],
+input[type='number'],
+input[type='password'] {
+    border-radius: .4rem !important;
+}
+
+header,
+section {
+    border-block-end: 1px solid #f3f3f3;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.navbar-toggler {
+    border-color: #ffffff;
+    outline: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.nav-pills .nav-item .nav-link {
+    border-radius: 16px;
+    background-color: #fdf7da;
+    margin: .2rem;
+}
+
+.nav-pills .nav-item .nav-link.active {
+    background-color: #ffd200;
+    color: #000;
+}
