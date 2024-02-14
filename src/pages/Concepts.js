@@ -8,16 +8,20 @@ export default function Concepts() {
             <header className="py-5" style={{ height: '100vh' }}>
                 <div className="container h-100">
                     <div className="row align-items-center h-100">
-                        <div className="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
-                            <div style={{maxWidth: "350px"}}>
-                                <h1 className="display-5 fw-bold mb-4">Explore our super&nbsp;<span className="underline"> business concepts</span>.</h1>
-                                <p className="text-muted my-4">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a className="btn btn-secondary btn-lg me-2" role="button" href="#">Explore Now</a>
+                        <div className="col-md-6 order-2 order-lg-1">
+                            <div className="text-center text-md-start">
+                                <div style={{maxWidth: "350px"}}>
+                                    <h1 className="display-5 fw-bold mb-4">Explore our super&nbsp;<span className="underline"> business concepts</span>.</h1>
+                                    <p className="text-muted my-4">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a className="btn btn-secondary btn-lg me-2" role="button" href="#">Explore Now</a>
+                                </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
-                            <div><img className="rounded img-fluid w-100 fit-cover" style={{minHeight: "300px"}} src="assets/img/illustrations/startup.svg"/></div>
+                        <div className="col-md-6 order-1 order-lg-2">
+                            <div className="text-center mb-4 mb-md-0"><img className="rounded img-fluid w-100 fit-cover" style={{minHeight: "300px"}} src="assets/img/illustrations/startup.svg"/></div>
                         </div>
                     </div>
+
                 </div>
             </header>
             <section className="py-5">

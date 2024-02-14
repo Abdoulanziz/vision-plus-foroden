@@ -41,3 +41,13 @@ section {
     background-color: #ffd200;
     color: #000;
 }
+
+@media (max-width: 767.98px) {
+    body {
+        font-size: 16px !important;
+    }
+
+    .card.card-cs {
+        padding: 4px !important;
+    }
+}
