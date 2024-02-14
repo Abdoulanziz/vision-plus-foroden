@@ -41,7 +41,7 @@ export default function Insights() {
             </header>
 
 
-            <section className="bg-light">
+            <section className="" style={{backgroundColor: "#00a98f"}}>
                 <div className="container py-5">
                     <div className="row">
                         <div className="connecting-founders-item-content">
@@ -58,21 +58,21 @@ export default function Insights() {
                             </div>
                             <div className="carousel-inner">
                                 <div className="carousel-item active" data-bs-interval="10000">
-                                <img src="https://ff.co/wp-content/uploads/2024/02/JANA0277-1-1024x604.jpg" className="d-block w-100" alt="..."  style={{borderRadius: ".6rem"}} />
+                                <img src="assets/img/sessions/session.webp" className="d-block w-100" alt="..."  style={{borderRadius: ".6rem"}} />
                                 <div className="carousel-caption d-none d-md-block">
                                     <h5>First slide label</h5>
                                     <p>Some representative placeholder content for the first slide.</p>
                                 </div>
                                 </div>
                                 <div className="carousel-item" data-bs-interval="2000">
-                                <img src="https://ff.co/wp-content/uploads/2024/02/JANA0277-1-1024x604.jpg" className="d-block w-100" alt="..."  style={{borderRadius: ".6rem"}} />
+                                <img src="assets/img/sessions/session.webp" className="d-block w-100" alt="..."  style={{borderRadius: ".6rem"}} />
                                 <div className="carousel-caption d-none d-md-block">
                                     <h5>Second slide label</h5>
                                     <p>Some representative placeholder content for the second slide.</p>
                                 </div>
                                 </div>
                                 <div className="carousel-item">
-                                <img src="https://ff.co/wp-content/uploads/2024/02/JANA0277-1-1024x604.jpg" className="d-block w-100" alt="..."  style={{borderRadius: ".6rem"}} />
+                                <img src="assets/img/sessions/session.webp" className="d-block w-100" alt="..."  style={{borderRadius: ".6rem"}} />
                                 <div className="carousel-caption d-none d-md-block">
                                     <h5>Third slide label</h5>
                                     <p>Some representative placeholder content for the third slide.</p>
@@ -93,7 +93,7 @@ export default function Insights() {
             </section>
 
 
-            <section className="py-5 mt-5">
+            <section className="bg-light py-5">
                 <div className="container my-5">
                     <div className="row mb-5">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
@@ -167,11 +167,11 @@ export default function Insights() {
             </section>
 
 
-            <section className="py-5 bg-light">
+            <section className="py-5" style={{backgroundColor: "#ffb900"}}>
                 <div className="container">
                     <div className="row mb-5">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
-                            <p className="fw-bold text-secondary mb-2">Video Messages</p>
+                            <p className="fw-bold mb-2">Video Messages</p>
                             <h3 className="fw-bold">Learn more from our founders</h3>
                         </div>
                     </div>
@@ -189,7 +189,7 @@ export default function Insights() {
             </section>
 
 
-            <section className="py-5">
+            <section className="py-5 bg-light">
                 <div className="container">
                     <div className="row mb-5">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
@@ -233,7 +233,7 @@ export default function Insights() {
             </section>
 
 
-            <section className="py-5 bg-light">
+            <section className="py-5">
                 <div className="container">
                     <div className="row mb-5">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
@@ -244,15 +244,15 @@ export default function Insights() {
                     <div className="row justify-content-center">
                         <div className="col-md-6">
                             <form>
-                                <div className="form-group">
+                                <div className="form-group mt-2">
                                     <label htmlFor="name">Your Name</label>
                                     <input type="text" className="form-control" id="name" placeholder="Enter your name" required />
                                 </div>
-                                <div className="form-group">
+                                <div className="form-group mt-2">
                                     <label htmlFor="email">Your Email</label>
                                     <input type="email" className="form-control" id="email" placeholder="Enter your email" required />
                                 </div>
-                                <div className="form-group">
+                                <div className="form-group mt-2">
                                     <label htmlFor="question">Your Question</label>
                                     <textarea className="form-control" id="question" rows="3" required ></textarea>
                                 </div>
@@ -264,14 +264,14 @@ export default function Insights() {
             </section>
 
 
-            <section className="py-4 py-xl-5">
-                <div className="container">
-                    <div className="text-dark bg-secondary border border-0 border-secondary d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5" style={{borderRadius: ".6rem"}}>
+            <section className="py-4 py-xl-5" style={{backgroundColor: "#ffb900"}}>
+                <div className="container" style={{backgroundColor: "#ffd200", borderRadius: "9px"}}>
+                    <div className="text-dark border border-0 border-secondary d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5" style={{borderRadius: ".6rem"}}>
                         <div className="pb-2 pb-lg-1">
                             <h2 className="fw-bold text-dark mb-2">Want to reach us?</h2>
                             <p className="mb-0">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
-                        <div className="my-2"><a className="btn btn-light fs-5 py-2 px-4" role="button" href="contacts.html">Contact us</a></div>
+                        <div className="my-2"><a className="btn btn-light fs-5 py-2 px-4" role="button" href="/contact">Contact us</a></div>
                     </div>
                 </div>
             </section>

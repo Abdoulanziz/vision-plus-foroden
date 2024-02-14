@@ -5,11 +5,11 @@ export default function Faqs() {
     const {siteName, setSiteName} = useContext(AppContext);
     return(
         <>
-            <section className="mt-5 py-5">
+            <section className="mt-5 py-5 bg-light">
                 <div className="container py-5">
                 <h2 className="mb-5">Frequently Asked Questions (FAQs)</h2>
                 
-                <h3>General Questions</h3>
+                <h3>#3 General Questions</h3>
                 <div className="accordion text-muted" role="tablist" id="accordion-1">
                     <div className="accordion-item">
                         <h2 className="accordion-header" role="tab"><button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1">What is VisionPlus?</button></h2>
@@ -44,7 +44,7 @@ export default function Faqs() {
             <section className="py-5">
                 <div className="container">
 
-                <h3 className="mt-5">Technical Questions</h3>
+                <h3 className="mt-5">#2 Technical Questions</h3>
                 <div className="accordion" id="technicalQuestions">
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="question2">
@@ -62,7 +62,7 @@ export default function Faqs() {
                 </div>
             </section>
 
-            <section className="py-5">
+            <section className="py-5 bg-light">
                 <div className="container">
 
                 <h3>Could not find your question?</h3>
@@ -78,14 +78,14 @@ export default function Faqs() {
                 </div>
             </section>
 
-            <section className="py-4 py-xl-5">
-                <div className="container">
-                    <div className="text-dark bg-secondary border border-0 border-secondary d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5" style={{borderRadius: ".6rem"}}>
+            <section className="py-4 py-xl-5" style={{backgroundColor: "#ffb900"}}>
+                <div className="container" style={{backgroundColor: "#ffd200", borderRadius: "9px"}}>
+                    <div className="text-dark border border-0 border-secondary d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5" style={{borderRadius: ".6rem"}}>
                         <div className="pb-2 pb-lg-1">
                             <h2 className="fw-bold text-dark mb-2">Want to reach us?</h2>
                             <p className="mb-0">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
-                        <div className="my-2"><a className="btn btn-light fs-5 py-2 px-4" role="button" href="contacts.html">Contact us</a></div>
+                        <div className="my-2"><a className="btn btn-light fs-5 py-2 px-4" role="button" href="/contact">Contact us</a></div>
                     </div>
                 </div>
             </section>
