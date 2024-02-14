@@ -18,7 +18,7 @@ export default function Navbar() {
                             <span></span>
                         </a>
                     </div>
-                    <div className="col-auto">
+                    <div className="col-auto d-md-none">
                         <button className="navbar-toggler" type="button" onClick={toggleModal}>
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -26,19 +26,19 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse justify-content-center" id="navcol-1">
                         <ul className="navbar-nav text-center">
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/" onClick={toggleModal}>Home</NavLink>
+                                <NavLink className="nav-link" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/insights" onClick={toggleModal}>Founders' Insights</NavLink>
+                                <NavLink className="nav-link" to="/insights">Founders' Insights</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/concepts" onClick={toggleModal}>Business Concepts</NavLink>
+                                <NavLink className="nav-link" to="/concepts">Business Concepts</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/faqs" onClick={toggleModal}>FAQs</NavLink>
+                                <NavLink className="nav-link" to="/faqs">FAQs</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/contact" onClick={toggleModal}>Contact</NavLink>
+                                <NavLink className="nav-link" to="/contact">Contact</NavLink>
                             </li>
                         </ul>
                         <NavLink className="btn btn-secondary navbar-btn" role="button" to="/">Featured Projects</NavLink>
