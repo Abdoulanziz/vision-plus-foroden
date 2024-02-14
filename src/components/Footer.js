@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="row row-cols-2 row-cols-md-4">
                     <div className="col-12 col-md-3">
                         <div className="fw-bold d-flex align-items-center mb-2"><img style={{minHeight: ""}} src="assets/img/logo/vision-plus-logo.svg" alt="VisionPlus logo" /></div>
-                        <p className="text-muted">Illuminate your path, one step at a time.</p>
+                        <p className="">Illuminate your path, one step at a time.</p>
                     </div>
                     <div className="col-sm-4 col-md-3 text-lg-start d-flex flex-column">
                         <h3 className="fs-6 fw-bold">Services</h3>

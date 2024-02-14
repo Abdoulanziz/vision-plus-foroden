@@ -12,17 +12,28 @@ input[type='password'] {
     border-radius: .4rem !important;
 }
 
-header,
-section {
-    border-block-end: 1px solid #f3f3f3;
+.navbar {
+    background-color: rgb(14, 14, 14) !important;
+}
+
+.navbar * {
+    color: #939292 !important;
+}
+
+.navbar .navbar-btn {
+    color: #000 !important;
+}
+
+.navbar li:hover * {
+    color: #c5c5c5 !important;
 }
 
 .navbar-toggler-icon {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 
 .navbar-toggler {
-    border-color: #ffffff;
+    /* border-color: #ffffff; */
     outline: none !important;
 }
 
@@ -40,6 +51,18 @@ section {
 .nav-pills .nav-item .nav-link.active {
     background-color: #ffd200;
     color: #000;
+}
+
+footer {
+    background-color: rgb(14, 14, 14);
+}
+
+footer * {
+    color: #686767 !important;
+}
+
+footer h3 {
+    color: #939292 !important;
 }
 
 @media (max-width: 767.98px) {
