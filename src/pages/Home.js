@@ -5,24 +5,19 @@ export default function Home() {
     const {siteName, setSiteName} = useContext(AppContext);
     return(
         <>
-            <header className="py-5" style={{ height: '100vh', backgroundImage: "url(assets/img/bg/bg.jpg)", backgroundSize: "cover" }}>
+            <header className="py-5 home-header">
                 <div className="container h-100">
                     <div className="row align-items-center h-100">
-                        <div className="col-lg-6 order-2 order-lg-1 text-center text-lg-start mb-5 mb-lg-0">
+                        <div className="col-lg-6 order-2 order-lg-1 text-center text-lg-start mb-5 mb-lg-0 text-text-content">
                             <h1 className="display-4 fw-bold mb-3 text-secondary">Illuminate your path, one step at a time.</h1>
                             <p className="fs-5 mb-4 text-secondary">Metus quisque ultricies vehicula proin, magna nullam.</p>
                             <button className="btn btn-lg bg-secondary me-3">Explore More</button>
                         </div>
-                        {/* <div className="col-lg-6 order-1 order-lg-2">
-                            <div className="text-center position-relative">
-                                <img className="img-fluid" src="assets/img/illustrations/meeting.svg" alt="Meeting Illustration" style={{ maxWidth: '100%', height: 'auto' }} />
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </header>
 
-            <section style={{backgroundColor: "#000"}}>
+            <section className="mission-vision">
                 <div className="container py-4 py-xl-5">
                     <div className="row mb-5">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
@@ -66,7 +61,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section>
+            <section className="business-concepts">
                 <div className="container bg-primary-gradient py-5">
                     <div className="row">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
@@ -76,7 +71,7 @@ export default function Home() {
                     </div>
                     <div className="py-5 p-lg-5">
                         <div className="row row-cols-1 row-cols-md-2 mx-auto" style={{maxWidth: "900px"}}>
-                            <div className="col mb-5">
+                            <div className="col mb-5 card-card-wrapper">
                                 <div className="card border-light bg-light border-1s " style={{borderRadius: ".6rem"}}>
                                     <div className="card-body px-4 py-5">
                                         <div className="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style={{top: "1rem",right: "1rem",position: "absolute"}}><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" className="bi bi-pin-angle text-secondary">
@@ -87,7 +82,7 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col mb-5">
+                            <div className="col mb-5 card-card-wrapper">
                                 <div className="card border-light bg-light border-1s " style={{borderRadius: ".6rem"}}>
                                     <div className="card-body px-4 py-5">
                                         <div className="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style={{top: "1rem",right: "1rem",position: "absolute"}}><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" className="bi bi-pin-angle text-secondary">
@@ -98,7 +93,7 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col mb-5">
+                            <div className="col mb-5 card-card-wrapper">
                                 <div className="card border-light bg-light border-1s " style={{borderRadius: ".6rem"}}>
                                     <div className="card-body px-4 py-5">
                                         <div className="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style={{top: "1rem",right: "1rem",position: "absolute"}}><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" className="bi bi-pin-angle text-secondary">
@@ -109,7 +104,7 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col mb-5">
+                            <div className="col mb-5 card-card-wrapper">
                                 <div className="card border-light bg-light border-1s " style={{borderRadius: ".6rem"}}>
                                     <div className="card-body px-4 py-5">
                                         <div className="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style={{top: "1rem",right: "1rem",position: "absolute"}}><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" className="bi bi-pin-angle text-secondary">
@@ -125,8 +120,8 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="py-5" style={{backgroundColor: "#ffb900"}}>
-                <div className="container py-5">
+            <section className="py-5 founders-insights">
+                <div className="container">
                     <div className="row mb-5">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
                             <p className="fw-bold mb-2">Founders' Insights</p>
@@ -137,12 +132,17 @@ export default function Home() {
                         <div className="col">
                             <div className="card border-light border-1 d-flex justify-content-center p-0" style={{borderRadius: ".6rem"}}>
                                 <div className="card-body px-4 py-5">
-                                    <div className="profile-img">
-                                        <img src="assets/img/team/avatar5.jpg" alt="Profile Picture" className="flex-shrink-0 me-3 mb-2 fit-cover" width="70" height="70" style={{borderRadius: "13px"}} />
+                                    <div className="card-body-img-and-text">
+                                        <div className="profile-img">
+                                            <img src="assets/img/team/avatar5.jpg" alt="Profile Picture" className="flex-shrink-0 me-3 mb-2 fit-cover" width="70" height="70" style={{borderRadius: "13px"}} />
+                                        </div>
+                                        <div>
+                                            <div className="fw-normal text-secondary">John Doe</div>
+                                            <h4 className="fw-bold">Founder</h4>
+                                        </div>
                                     </div>
-                                    <div className="fw-normal text-secondary">John Doe</div>
+
                                     <div>
-                                        <h4 className="fw-bold">Founder</h4>
                                         <p className="text-muted">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><button className="btn btn-secondary" type="button">Learn More&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" className="bi bi-arrow-right">
                                                 <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
                                             </svg><br/></button>
@@ -153,12 +153,17 @@ export default function Home() {
                         <div className="col">
                             <div className="card border-light border-1 d-flex justify-content-center p-0" style={{borderRadius: ".6rem"}}>
                                 <div className="card-body px-4 py-5">
-                                    <div className="profile-img">
-                                        <img src="assets/img/team/avatar5.jpg" alt="Profile Picture" className="flex-shrink-0 me-3 mb-2 fit-cover" width="70" height="70" style={{borderRadius: "13px"}} />
+                                    <div className="card-body-img-and-text">
+                                        <div className="profile-img">
+                                            <img src="assets/img/team/avatar5.jpg" alt="Profile Picture" className="flex-shrink-0 me-3 mb-2 fit-cover" width="70" height="70" style={{borderRadius: "13px"}} />
+                                        </div>
+                                        <div>
+                                            <div className="fw-normal text-secondary">John Doe</div>
+                                            <h4 className="fw-bold">Founder</h4>
+                                        </div>
                                     </div>
-                                    <div className="fw-normal text-secondary">John Doe</div>
+
                                     <div>
-                                        <h4 className="fw-bold">Founder</h4>
                                         <p className="text-muted">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><button className="btn btn-secondary" type="button">Learn More&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" className="bi bi-arrow-right">
                                                 <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
                                             </svg><br/></button>
@@ -169,12 +174,17 @@ export default function Home() {
                         <div className="col">
                             <div className="card border-light border-1 d-flex justify-content-center p-0" style={{borderRadius: ".6rem"}}>
                                 <div className="card-body px-4 py-5">
-                                    <div className="profile-img">
-                                        <img src="assets/img/team/avatar5.jpg" alt="Profile Picture" className="flex-shrink-0 me-3 mb-2 fit-cover" width="70" height="70" style={{borderRadius: "13px"}} />
+                                    <div className="card-body-img-and-text">
+                                        <div className="profile-img">
+                                            <img src="assets/img/team/avatar5.jpg" alt="Profile Picture" className="flex-shrink-0 me-3 mb-2 fit-cover" width="70" height="70" style={{borderRadius: "13px"}} />
+                                        </div>
+                                        <div>
+                                            <div className="fw-normal text-secondary">John Doe</div>
+                                            <h4 className="fw-bold">Founder</h4>
+                                        </div>
                                     </div>
-                                    <div className="fw-normal text-secondary">John Doe</div>
+
                                     <div>
-                                        <h4 className="fw-bold">Founder</h4>
                                         <p className="text-muted">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><button className="btn btn-secondary" type="button">Learn More&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" className="bi bi-arrow-right">
                                                 <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
                                             </svg><br/></button>
@@ -186,8 +196,8 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="py-5 bg-light">
-                <div className="container my-5">
+            <section className="py-5 bg-light latest-posts">
+                <div className="container">
                     <div className="row mb-5">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
                             <p className="fw-bold text-secondary mb-2">Latest Posts</p>
@@ -260,7 +270,7 @@ export default function Home() {
             </section>
 
             <section className="py-5">
-                <div className="container py-5">
+                <div className="container">
                     <div className="row mb-5">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
                             <p className="fw-bold text-secondary mb-2">Testimonials</p>
@@ -306,9 +316,9 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="py-4 py-xl-5" style={{backgroundColor: "#ffb900"}}>
+            <section className="py-4 py-xl-5 how-to-reach-us" style={{backgroundColor: "#ffb900"}}>
                 <div className="container" style={{backgroundColor: "#ffd200", borderRadius: "9px"}}>
-                    <div className="text-dark border border-0 border-secondary d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5" style={{borderRadius: ".6rem"}}>
+                    <div className="container-inner text-dark border border-0 border-secondary d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5" style={{borderRadius: ".6rem"}}>
                         <div className="pb-2 pb-lg-1">
                             <h2 className="fw-bold text-dark mb-2">Want to reach us?</h2>
                             <p className="mb-0">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

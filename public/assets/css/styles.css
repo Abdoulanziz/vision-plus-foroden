@@ -29,12 +29,16 @@ input[type='password'] {
 }
 
 .navbar-toggler-icon {
-    /* background-color: #ffffff; */
+    background-color: #ffd200;
+    color: #ffd200 !important;
+    border-radius: 6px;
 }
 
 .navbar-toggler {
-    /* border-color: #ffffff; */
+    border: 1px solid #ffd200;
     outline: none !important;
+    padding: 5px;
+    border-radius: 9px;
 }
 
 .navbar-toggler:focus {
@@ -51,6 +55,20 @@ input[type='password'] {
 .nav-pills .nav-item .nav-link.active {
     background-color: #ffd200;
     color: #000;
+}
+
+.home-header {
+    block-size: 100vh;
+    background-image: url(../img/bg/bg.jpg);
+    background-size: cover;
+}
+
+.mission-vision {
+    background-color: #000;
+}
+
+.founders-insights {
+    background-color: #ffb900;
 }
 
 footer {
@@ -72,5 +90,165 @@ footer h3 {
 
     .card.card-cs {
         padding: 4px !important;
+    }
+
+    .home-header {
+        block-size: 70vh;
+        background-image: url(../img/bg/bg-mobile.jpg);
+        background-size: cover;
+    }
+
+    .home-header .row {
+        height: 100% !important;
+        display: flex !important;
+        justify-content: flex-end !important;
+        align-items: flex-end !important;
+    }
+
+    .home-header h1 {
+        font-size: 28px !important;
+    }
+
+    .home-header p {
+        font-size: 16px !important;
+    }
+
+    .home-header button {
+        padding: .4rem 1rem;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .mission-vision .card {
+        padding: 12px 14px !important;
+    }
+
+    .mission-vision .card .bs-icon {
+        block-size: 42px !important;
+        inline-size: 42px !important;
+        padding: 6px !important;
+        margin-block-end: .8rem !important;
+    }
+
+    .mission-vision .card h4 {
+        margin: .2rem 0 !important;
+        font-size: 17px !important;
+    }
+
+    .mission-vision .card p {
+        margin: 0 !important;
+    }
+
+    .business-concepts .card-card-wrapper {
+        margin-block: .6rem !important;
+        padding-inline: 0 !important;
+    }
+
+    .business-concepts .card {
+        padding: 16px 14px !important;
+    }
+
+    .business-concepts .card-body {
+        padding: 6px 7px !important;
+    }
+
+    .business-concepts .card-body .bs-icon {
+        display: none !important;
+    }
+
+    .business-concepts .card-body .bs-icon {
+        display: none !important;
+    }
+
+    .business-concepts .card-body .btn {
+        padding: .4rem 1rem;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .business-concepts .card-body h5 {
+        font-size: 18px !important;
+    }
+
+    .business-concepts .card-body p {
+        margin-block-end: .4rem !important;
+        font-size: 15px !important;
+    }
+
+    .founders-insights .card {
+        padding: 16px 14px !important;
+    }
+
+    .founders-insights .card-body .card-body-img-and-text {
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        gap: 2px;
+    }
+
+    .founders-insights .card-body {
+        padding: 0 !important;
+    }
+
+    .founders-insights .card-body .btn {
+        padding: .4rem 1rem;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .founders-insights .card-body h4 {
+        font-size: 18px !important;
+    }
+
+    .founders-insights .card-body p {
+        margin-block-end: .4rem !important;
+        font-size: 15px !important;
+    }
+
+
+    .latest-posts img {
+        block-size: 150px !important;
+    }
+
+    .latest-posts .card-body p {
+        margin-block-end: .4rem !important;
+        font-size: 15px !important;
+    }
+
+    .latest-posts .card-body .btn {
+        padding: .4rem 1rem;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .how-to-reach-us .container {
+        background-color: transparent !important;
+    }
+
+    .how-to-reach-us .container-inner {
+        background-color: #ffd200;
+    }
+
+    .how-to-reach-us .container-inner .btn {
+        padding: .4rem 1rem !important;
+        font-size: 14px !important;
+        font-weight: normal !important;
+    }
+
+    footer .footer-content-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 12px;
+    }
+
+    footer .footer-content-wrapper .content-inner,
+    footer .footer-content-wrapper .content-inner ul {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        inline-size: 100%;
     }
 }

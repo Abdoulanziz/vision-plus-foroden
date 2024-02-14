@@ -4,12 +4,12 @@ export default function Footer() {
     return(
         <footer>
             <div className="container py-4 py-lg-5">
-                <div className="row row-cols-2 row-cols-md-4">
-                    <div className="col-12 col-md-3">
+                <div className="row row-cols-2 row-cols-md-4 footer-content-wrapper">
+                    <div className="col-12 col-md-3 content-inner">
                         <div className="fw-bold d-flex align-items-center mb-2"><img style={{minHeight: ""}} src="assets/img/logo/vision-plus-logo.svg" alt="VisionPlus logo" /></div>
                         <p className="">Illuminate your path, one step at a time.</p>
                     </div>
-                    <div className="col-sm-4 col-md-3 text-lg-start d-flex flex-column">
+                    <div className="col-sm-4 col-md-3 text-lg-start d-flex flex-column content-inner">
                         <h3 className="fs-6 fw-bold">Services</h3>
                         <ul className="list-unstyled">
                             <li><a href="#">Concept Development</a></li>
@@ -17,14 +17,14 @@ export default function Footer() {
                             <li><a href="#">Workshops</a></li>
                         </ul>
                     </div>
-                    <div className="col-sm-4 col-md-3 text-lg-start d-flex flex-column">
+                    <div className="col-sm-4 col-md-3 text-lg-start d-flex flex-column content-inner">
                         <h3 className="fs-6 fw-bold">About</h3>
                         <ul className="list-unstyled">
                             <li><a href="#">Company</a></li>
                             <li><a href="#">Team</a></li>
                         </ul>
                     </div>
-                    <div className="col-sm-4 col-md-3 text-lg-start d-flex flex-column">
+                    <div className="col-sm-4 col-md-3 text-lg-start d-flex flex-column content-inner">
                         <h3 className="fs-6 fw-bold">Careers</h3>
                         <ul className="list-unstyled">
                             <li><a href="#">Job openings</a></li>
