@@ -361,4 +361,12 @@ footer h3 {
         border-radius: 9px;
         padding-block-start: 24px;
     }
+
+    .business-concepts-header .text-text-content {
+        block-size: 100%;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+    }
 }
