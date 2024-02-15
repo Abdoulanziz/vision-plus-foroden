@@ -6,14 +6,14 @@ export default function Concept02() {
     return(
         <>
             <section className="py-5 bg-light">
-                <div class="container mt-5" style={{border: "1px solid #f3f3f3", backgroundColor: "#fff", paddingBlock: "12px"}}>
-                    <div class="row">
-                        <div class="col">
+                <div className="container mt-5" style={{border: "1px solid #f3f3f3", backgroundColor: "#fff", paddingBlock: "12px"}}>
+                    <div className="row">
+                        <div className="col">
                             <h2>Decision Making</h2>
                         </div>
                     </div>
-                    <div class="row mt-4">
-                        <div class="col">
+                    <div className="row mt-4">
+                        <div className="col">
                             <h3>Specific Situations of Uncertainty:</h3>
                             <ul>
                                 <li>Individuals may find themselves in uncertainty when:</li>
@@ -26,8 +26,8 @@ export default function Concept02() {
                             </ul>
                         </div>
                     </div>
-                    <div class="row mt-4">
-                        <div class="col">
+                    <div className="row mt-4">
+                        <div className="col">
                             <h3>Platform Assistance in Addressing Concerns:</h3>
                             <ul>
                                 <li>The platform will assist users by:</li>
@@ -41,8 +41,8 @@ export default function Concept02() {
                             </ul>
                         </div>
                     </div>
-                    <div class="row mt-4">
-                        <div class="col">
+                    <div className="row mt-4">
+                        <div className="col">
                             <h3>Scientific Knowledge and Expertise:</h3>
                             <ul>
                                 <li>The platform will draw upon:</li>
@@ -55,8 +55,8 @@ export default function Concept02() {
                             </ul>
                         </div>
                     </div>
-                    <div class="row mt-4">
-                        <div class="col">
+                    <div className="row mt-4">
+                        <div className="col">
                             <h3>Goals and Objectives:</h3>
                             <ul>
                                 <li>Our goals in developing the platform are:</li>
@@ -69,8 +69,8 @@ export default function Concept02() {
                             </ul>
                         </div>
                     </div>
-                    <div class="row mt-4">
-                        <div class="col">
+                    <div className="row mt-4">
+                        <div className="col">
                             <p>These responses reflect our commitment to leveraging scientific knowledge, personalized support, and collaborative engagement to address users' uncertainties and enable them to make informed decisions that align with their goals and aspirations.</p>
                         </div>
                     </div>

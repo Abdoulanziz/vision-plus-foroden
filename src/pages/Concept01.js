@@ -6,7 +6,7 @@ export default function Concept01() {
     return(
         <>
             <section className="py-5 bg-light">
-                <div class="container mt-5" style={{border: "1px solid #f3f3f3", backgroundColor: "#fff", paddingBlock: "12px"}}>
+                <div className="container mt-5" style={{border: "1px solid #f3f3f3", backgroundColor: "#fff", paddingBlock: "12px"}}>
                     <div className="row">
                         <div className="col">
                             <h2>Agricultural and Food Supply Chain</h2>
