@@ -26,9 +26,11 @@ export default function Concepts() {
             <header className="py-5 business-concepts-header">
                 <div className="container h-100">
                     <div className="row align-items-center h-100">
-                        <div className="col-lg-6 order-2 order-lg-1 text-center text-lg-start mb-5 mb-lg-0 text-text-content">
-                            <h1 className="display-4 fw-bold mb-3 text-secondary">Explore our super Business Concepts.</h1>
-                            <p className="fs-5 mb-4 text-secondary">Our team is ready to empower progress and inspire excellence.</p>
+                        <div className="col-md-6 order-2 order-lg-1">
+                        </div>
+                        <div className="col-lg-6 order-1 order-lg-2 text-center text-lg-start mb-5 mb-lg-0 text-text-content">
+                            <h1 className="display-4 fw-bold mb-3 text-dark">Explore our super Business Concepts.</h1>
+                            <p className="fs-5 mb-4 text-dark">Our team is ready to empower progress and inspire excellence.</p>
                             <button className="btn btn-lg bg-secondary me-3">Explore Now</button>
                         </div>
                     </div>
