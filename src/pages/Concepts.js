@@ -5,7 +5,7 @@ export default function Concepts() {
     const {siteName, setSiteName} = useContext(AppContext);
     return(
         <>
-            <header className="py-5" style={{ height: '100vh', backgroundImage: "url(assets/img/bg/cp.jpg)", backgroundSize: "cover" }}>
+            {/* <header className="py-5" style={{ height: '100vh', backgroundImage: "url(assets/img/bg/cp.jpg)", backgroundSize: "cover" }}>
                 <div className="container h-100">
                     <div className="row align-items-center h-100">
                         <div className="col-md-6 order-2 order-lg-1">
@@ -21,6 +21,17 @@ export default function Concepts() {
                         </div>
                     </div>
 
+                </div>
+            </header> */}
+            <header className="py-5 business-concepts-header">
+                <div className="container h-100">
+                    <div className="row align-items-center h-100">
+                        <div className="col-lg-6 order-2 order-lg-1 text-center text-lg-start mb-5 mb-lg-0 text-text-content">
+                            <h1 className="display-4 fw-bold mb-3 text-secondary">Explore our super Business Concepts.</h1>
+                            <p className="fs-5 mb-4 text-secondary">Our team is ready to empower progress and inspire excellence.</p>
+                            <button className="btn btn-lg bg-secondary me-3">Explore Now</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <section className="py-5" style={{backgroundColor: "#fff"}}>
@@ -56,8 +67,8 @@ export default function Concepts() {
                             </li>
                         </ul>
                     </div>
-                    <div className="row row-cols-1 row-cols-md-2 mx-auto" style={{maxWidth: "900px"}}>
-                        <div className="col mb-5"><img className="rounded img-fluid" src="assets/img/illustrations/1.png" style={{blockSize: "300px", inlineSize: "300px"}}/></div>
+                    <div className="row row-cols-1 row-cols-md-2 mx-auto business-concept-container" style={{maxWidth: "900px"}}>
+                        <div className="col mb-5 business-concept-img-wrapper"><img className="rounded img-fluid business-concept-img" src="assets/img/illustrations/1.png" style={{blockSize: "300px", inlineSize: "300px"}}/></div>
                         <div className="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                             <div>
                                 <h5 className="fs-3 fw-bold mb-4">#1 Disruptive Innovations</h5>
@@ -71,8 +82,8 @@ export default function Concepts() {
                             </div>
                         </div>
                     </div>
-                    <div className="row row-cols-1 row-cols-md-2 mx-auto" style={{maxWidth: "900px"}}>
-                        <div className="col order-md-last mb-5"><img className="rounded img-fluid" src="assets/img/illustrations/3.png" style={{blockSize: "300px", inlineSize: "300px"}}/></div>
+                    <div className="row row-cols-1 row-cols-md-2 mx-auto business-concept-container" style={{maxWidth: "900px"}}>
+                        <div className="col order-md-last mb-5 business-concept-img-wrapper"><img className="rounded img-fluid business-concept-img" src="assets/img/illustrations/3.png" style={{blockSize: "300px", inlineSize: "300px"}}/></div>
                         <div className="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                             <div className="ms-md-3">
                                 <h5 className="fs-3 fw-bold mb-4">#2 The Gig Economy</h5>
@@ -85,8 +96,8 @@ export default function Concepts() {
                             </div>
                         </div>
                     </div>
-                    <div className="row row-cols-1 row-cols-md-2 mx-auto" style={{maxWidth: "900px"}}>
-                        <div className="col mb-5"><img className="rounded img-fluid" src="assets/img/illustrations/2.png" style={{blockSize: "300px", inlineSize: "300px"}}/></div>
+                    <div className="row row-cols-1 row-cols-md-2 mx-auto business-concept-container" style={{maxWidth: "900px"}}>
+                        <div className="col mb-5 business-concept-img-wrapper"><img className="rounded img-fluid business-concept-img" src="assets/img/illustrations/2.png" style={{blockSize: "300px", inlineSize: "300px"}}/></div>
                         <div className="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                             <div>
                                 <h5 className="fs-3 fw-bold mb-4">#3 Sustainable Business Models</h5>

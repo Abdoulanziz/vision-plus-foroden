@@ -30,9 +30,6 @@ export default function Insights() {
                                     <li className="nav-item">
                                         <a className="nav-link" href="">Startup Stories</a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="">Startups to Watch</a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -46,7 +43,7 @@ export default function Insights() {
                     <div className="row">
                         <div className="connecting-founders-item-content">
                             <div className="featured-post-details">
-                                <h2>10 Top Takeaways From FF100 Dubai</h2>
+                                <h2>Top 10 Takeaways From FF100 Dubai</h2>
                             </div>
                             <p>Read the key takeaways from FF100 Dubai 2024, covering VC investment, AI, talent, and more tech trends from the MENA region and beyond.</p>
                         </div>
@@ -93,7 +90,7 @@ export default function Insights() {
             </section>
 
 
-            <section className="bg-light py-5">
+            <section className="bg-light py-5 latest-posts">
                 <div className="container my-5">
                     <div className="row mb-5">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
@@ -177,12 +174,12 @@ export default function Insights() {
                     </div>
                     <div className="row">
                         <div className="col-md-6">
-                            <div className="embed-responsive embed-responsive-16by9">
+                            <div className="embed-responsive embed-responsive-16by9 mobile-video">
                                 <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/video-id" allowFullScreen></iframe>
                             </div>
                         </div>
-                        <div className="col-md-6">
-                            <p>Transcript or summary of the video goes here.</p>
+                        <div className="col-md-6 transcript-summary">
+                            <p>Transcript of the vidoe will be typing as the video plays.</p>
                         </div>
                     </div>
                 </div>
@@ -200,30 +197,30 @@ export default function Insights() {
                     <div className="row">
                         <div className="col-md-4">
                             <div className="card border-light border-1 mb-4" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/books/book.png" className="card-img-top" alt="Book Title 1" style={{borderRadius: ".6rem .6rem 0 0"}} />
+                                <img src="assets/img/books/book.png" className="card-img-top book-img" alt="Book Title 1" style={{borderRadius: ".6rem .6rem 0 0"}} />
                                 <div className="card-body">
                                     <h5 className="card-title">Book Title 1</h5>
-                                    <p className="card-text">Description of the book goes here. More details about the book can be added here, such as the author, publication date, and genre.</p>
+                                    <p className="card-text">Description of the book goes here. More details about the book can displayed, such as the author, publication date, and genre.</p>
                                     <a href="#" className="btn btn-secondary">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card border-light border-1 mb-4" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/books/book.png" className="card-img-top" alt="Book Title 2" style={{borderRadius: ".6rem .6rem 0 0"}} />
+                                <img src="assets/img/books/book.png" className="card-img-top book-img" alt="Book Title 2" style={{borderRadius: ".6rem .6rem 0 0"}} />
                                 <div className="card-body">
                                     <h5 className="card-title">Book Title 2</h5>
-                                    <p className="card-text">Description of the book goes here. More details about the book can be added here, such as the author, publication date, and genre.</p>
+                                    <p className="card-text">Description of the book goes here. More details about the book can displayed, such as the author, publication date, and genre.</p>
                                     <a href="#" className="btn btn-secondary">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card border-light border-1 mb-4" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/books/book.png" className="card-img-top" alt="Book Title 3" style={{borderRadius: ".6rem .6rem 0 0"}} />
+                                <img src="assets/img/books/book.png" className="card-img-top book-img" alt="Book Title 3" style={{borderRadius: ".6rem .6rem 0 0"}} />
                                 <div className="card-body">
                                     <h5 className="card-title">Book Title 3</h5>
-                                    <p className="card-text">Description of the book goes here. More details about the book can be added here, such as the author, publication date, and genre.</p>
+                                    <p className="card-text">Description of the book goes here. More details about the book can displayed, such as the author, publication date, and genre.</p>
                                     <a href="#" className="btn btn-secondary">Read More</a>
                                 </div>
                             </div>

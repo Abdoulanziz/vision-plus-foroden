@@ -10,7 +10,7 @@ export default function Home() {
                     <div className="row align-items-center h-100">
                         <div className="col-lg-6 order-2 order-lg-1 text-center text-lg-start mb-5 mb-lg-0 text-text-content">
                             <h1 className="display-4 fw-bold mb-3 text-secondary">Illuminate your path, one step at a time.</h1>
-                            <p className="fs-5 mb-4 text-secondary">Metus quisque ultricies vehicula proin, magna nullam.</p>
+                            <p className="fs-5 mb-4 text-secondary">Our team is ready to empower progress and inspire excellence.</p>
                             <button className="btn btn-lg bg-secondary me-3">Explore More</button>
                         </div>
                     </div>

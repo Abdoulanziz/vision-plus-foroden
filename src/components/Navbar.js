@@ -46,9 +46,9 @@ export default function Navbar() {
                 </div>
             </nav>
             {showModal && (
-                <div className="modal fade show" tabIndex="-1" role="dialog" style={{ display: "block" }}>
-                    <div className="modal-dialog modal-dialog-top" role="document" style={{ margin: "0", height: "100vh" }}>
-                        <div className="modal-content" style={{ height: "100%", border: "none" }}>
+                <div className="navbar-modal modal fade show" tabIndex="-1" role="dialog" style={{ display: "block" }}>
+                    <div className="navbar-modal-dialog modal-dialog modal-dialog-top" role="document" style={{ margin: "0", height: "100vh" }}>
+                        <div className="navbar-modal-content modal-content" style={{ height: "100%", border: "none" }}>
                             <div className="modal-header">
                                 <a href="/" className="navbar-brand">
                                     <img src="assets/img/logo/vision-plus-logo.svg" alt="Logo" className="navbar-logo" />

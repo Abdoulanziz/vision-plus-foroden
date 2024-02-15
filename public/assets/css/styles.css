@@ -57,9 +57,54 @@ input[type='password'] {
     color: #000;
 }
 
+.navbar-modal {
+    background-color: #ffd200;
+}
+
+.navbar-modal-dialog {
+    background-color: #ffd200;
+}
+
+.navbar-modal-content {
+    background-color: #000;
+}
+
+.navbar-modal-content .nav-link {
+    color: #9b9a9a;
+    font-weight: bold;
+}
+
+.navbar-modal-content .nav-link.active {
+    color: #dddddd;
+}
+
+.navbar-modal-content .modal-header {
+    background-color: #000;
+    block-size: 75px;
+    padding-inline: 12px !important;
+    border-block-end: #181818;
+}
+
+.navbar-modal-content .modal-header .btn-close {
+    color: #ffd200;
+    background-color: #ffd200;
+    border: 1px solid #ffd200;
+    outline: none !important;
+    padding: 12px;
+    border-radius: 9px;
+    margin-inline-end: 1px;
+}
+
+
 .home-header {
     block-size: 100vh;
     background-image: url(../img/bg/bg.jpg);
+    background-size: cover;
+}
+
+.business-concepts-header {
+    block-size: 100vh;
+    background-image: url(../img/bg/cp.jpg);
     background-size: cover;
 }
 
@@ -69,6 +114,10 @@ input[type='password'] {
 
 .founders-insights {
     background-color: #ffb900;
+}
+
+.book-img {
+    block-size: 180px;
 }
 
 footer {
@@ -114,6 +163,35 @@ footer h3 {
     }
 
     .home-header button {
+        padding: .4rem 1rem;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .business-concepts-header {
+        block-size: 70vh;
+        background-image: url(../img/bg/cp-mobile.jpg);
+        background-size: cover;
+    }
+
+    .business-concepts-header .row {
+        height: 100% !important;
+        display: flex !important;
+        justify-content: flex-end !important;
+        align-items: flex-end !important;
+    }
+
+    .business-concepts-header h1 {
+        font-size: 28px !important;
+        color: #000 !important;
+    }
+
+    .business-concepts-header p {
+        font-size: 16px !important;
+        color: #000 !important;
+    }
+
+    .business-concepts-header button {
         padding: .4rem 1rem;
         font-size: 14px;
         font-weight: normal;
@@ -250,5 +328,37 @@ footer h3 {
         justify-content: center !important;
         align-items: center !important;
         inline-size: 100%;
+    }
+
+    .mobile-video {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile-video iframe {
+        inline-size: 100%;
+        block-size: 220px;
+    }
+
+    .transcript-summary p {
+        margin-block-start: 8px;
+    }
+
+    .business-concept-img {
+        block-size: 100px !important;
+        inline-size: 100px !important;
+    }
+
+    .business-concept-img-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-block-end: 4px !important;
+    }
+
+    .business-concept-container {
+        border: 1px solid #f3f3f3;
+        margin-block-end: 12px;
+        border-radius: 9px;
+        padding-block-start: 24px;
     }
 }
