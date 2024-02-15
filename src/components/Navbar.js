@@ -14,7 +14,7 @@ export default function Navbar() {
                 <div className="container d-flex justify-content-between align-items-center">
                     <div className="col">
                         <a href="/" className="navbar-brand">
-                            <img src="assets/img/logo/vision-plus-logo.svg" alt="Logo" className="navbar-logo" />
+                            <img src="assets/img/logo/foroden-logo.svg" alt="Logo" className="navbar-logo" />
                             <span></span>
                         </a>
                     </div>
@@ -51,7 +51,7 @@ export default function Navbar() {
                         <div className="navbar-modal-content modal-content" style={{ height: "100%", border: "none" }}>
                             <div className="modal-header">
                                 <a href="/" className="navbar-brand">
-                                    <img src="assets/img/logo/vision-plus-logo.svg" alt="Logo" className="navbar-logo" />
+                                    <img src="assets/img/logo/foroden-logo.svg" alt="Logo" className="navbar-logo" />
                                     <span></span>
                                 </a>
                                 <button type="button" className="btn-close" onClick={toggleModal} aria-label="Close"></button>

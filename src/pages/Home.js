@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../App";
+import { Link } from "react-router-dom";
 
 export default function Home() {
     const {siteName, setSiteName} = useContext(AppContext);
@@ -9,8 +10,8 @@ export default function Home() {
                 <div className="container h-100">
                     <div className="row align-items-center h-100">
                         <div className="col-lg-6 order-2 order-lg-1 text-center text-lg-start mb-5 mb-lg-0 text-text-content">
-                            <h1 className="display-4 fw-bold mb-3 text-secondary">Illuminate your path, one step at a time.</h1>
-                            <p className="fs-5 mb-4 text-secondary">Our team is ready to empower progress and inspire excellence.</p>
+                            <h1 className="display-4 fw-bold mb-3 text-secondary">Fostering Innovation, Realizing Concepts</h1>
+                            <p className="fs-5 mb-4 text-secondary">Your Pathway to Business Success</p>
                             <button className="btn btn-lg bg-secondary me-3">Explore More</button>
                         </div>
                     </div>
@@ -35,9 +36,13 @@ export default function Home() {
                                             <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
                                             <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
                                         </svg></div>
-                                    <div>
+                                    <div className="mission-content">
                                         <h4 className="fw-bold">Mission</h4>
-                                        <p className="text-muted">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p className="text-muted">Establishing mutual understanding and connection with our audience, facilitating collaboration and partnership.</p>
+                                        <p className="text-muted">Providing a platform to prepare prerequisites necessary for realizing business concepts across industries.</p>
+                                        <p className="text-muted">Addressing pain points within each business concept, offering innovative solutions for realization.</p>
+                                        <p className="text-muted">Transparently sharing thoughts and insights from the inception stage with potential partners to foster trust and collaboration.</p>
+                                        <p className="text-muted">Actively seeking experienced individuals, talented professionals, and established businesses as strategic partners for the successful realization of business concepts.</p>
                                     </div>
                                 </div>
                             </div>
@@ -50,9 +55,13 @@ export default function Home() {
                                             <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
                                             <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
                                         </svg></div>
-                                    <div>
+                                    <div className="vision-content">
                                         <h4 className="fw-bold">Vision</h4>
-                                        <p className="text-muted">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p className="text-muted">Establishing our platform as the foundational cornerstone for our holding company's future, encompassing subsidiaries in various business concepts to bring them to fruition.</p>
+                                        <p className="text-muted">Unifying talented individuals and forging strategic partnerships within targeted industries to lay the groundwork for future business ventures.</p>
+                                        <p className="text-muted">Serving as a source of inspiration and knowledge, attracting like-minded individuals and partners for collaboration and innovation.</p>
+                                        <p className="text-muted">Actualizing business concepts under our main holding, ensuring successful implementation and growth.</p>
+                                        <p className="text-muted">Attracting suitable individuals and partners to realize business concepts within a specified timeframe.</p>
                                     </div>
                                 </div>
                             </div>
@@ -77,8 +86,9 @@ export default function Home() {
                                         <div className="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style={{top: "1rem",right: "1rem",position: "absolute"}}><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" className="bi bi-pin-angle text-secondary">
                                                 <path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146zm.122 2.112v-.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a4.507 4.507 0 0 0-.288-.076 4.922 4.922 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a4.924 4.924 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034.114 0 .23-.011.343-.04L9.927 2.028c-.029.113-.04.23-.04.343a1.779 1.779 0 0 0 .062.46z"></path>
                                             </svg></div>
-                                        <h5 className="fw-bold card-title">The #-Phase Ideation</h5>
-                                        <p className="text-muted card-text mb-4">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><button className="btn btn-secondary" type="button">Learn more</button>
+                                        <h5 className="fw-bold card-title">Agriculture & Food Sector</h5>
+                                        <p className="text-muted card-text mb-4">Empowering Local Farmers: Our platform is driven by a commitment to fostering sustainable agriculture, empowering local farmers, and...</p>
+                                        <Link className="btn btn-secondary" to="/concepts/concept-01">Learn more</Link>
                                     </div>
                                 </div>
                             </div>
@@ -88,8 +98,9 @@ export default function Home() {
                                         <div className="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style={{top: "1rem",right: "1rem",position: "absolute"}}><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" className="bi bi-pin-angle text-secondary">
                                                 <path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146zm.122 2.112v-.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a4.507 4.507 0 0 0-.288-.076 4.922 4.922 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a4.924 4.924 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034.114 0 .23-.011.343-.04L9.927 2.028c-.029.113-.04.23-.04.343a1.779 1.779 0 0 0 .062.46z"></path>
                                             </svg></div>
-                                        <h5 className="fw-bold card-title">The #-Phase Ideation</h5>
-                                        <p className="text-muted card-text mb-4">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><button className="btn btn-secondary" type="button">Learn more</button>
+                                        <h5 className="fw-bold card-title">Decision Making</h5>
+                                        <p className="text-muted card-text mb-4">Specific Situations of Uncertainty: Individuals may find themselves in uncertainty when exploring new career opportunities or transitioning...</p>
+                                        <Link className="btn btn-secondary" to="/concepts/concept-02">Learn more</Link>
                                     </div>
                                 </div>
                             </div>
@@ -99,8 +110,9 @@ export default function Home() {
                                         <div className="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style={{top: "1rem",right: "1rem",position: "absolute"}}><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" className="bi bi-pin-angle text-secondary">
                                                 <path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146zm.122 2.112v-.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a4.507 4.507 0 0 0-.288-.076 4.922 4.922 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a4.924 4.924 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034.114 0 .23-.011.343-.04L9.927 2.028c-.029.113-.04.23-.04.343a1.779 1.779 0 0 0 .062.46z"></path>
                                             </svg></div>
-                                        <h5 className="fw-bold card-title">The #-Phase Ideation</h5>
-                                        <p className="text-muted card-text mb-4">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><button className="btn btn-secondary" type="button">Learn more</button>
+                                        <h5 className="fw-bold card-title">Fashion & Clothing</h5>
+                                        <p className="text-muted card-text mb-4">Inspiration for a New Approach: Our inspiration for establishing a new approach to selling online women's clothes and accessories stemmed...</p>
+                                        <Link className="btn btn-secondary" to="/concepts/concept-03">Learn more</Link>
                                     </div>
                                 </div>
                             </div>
@@ -110,8 +122,9 @@ export default function Home() {
                                         <div className="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style={{top: "1rem",right: "1rem",position: "absolute"}}><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" className="bi bi-pin-angle text-secondary">
                                                 <path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146zm.122 2.112v-.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a4.507 4.507 0 0 0-.288-.076 4.922 4.922 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a4.924 4.924 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034.114 0 .23-.011.343-.04L9.927 2.028c-.029.113-.04.23-.04.343a1.779 1.779 0 0 0 .062.46z"></path>
                                             </svg></div>
-                                        <h5 className="fw-bold card-title">The #-Phase Ideation</h5>
-                                        <p className="text-muted card-text mb-4">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><button className="btn btn-secondary" type="button">Learn more</button>
+                                        <h5 className="fw-bold card-title">Green Hydrogen Industry</h5>
+                                        <p className="text-muted card-text mb-4">Assembling a Talented Team: When assembling a team for the Green Hydrogen sector, we prioritize specific expertise and experience, including...</p>
+                                        <Link className="btn btn-secondary" to="/concepts/concept-04">Learn more</Link>
                                     </div>
                                 </div>
                             </div>
