@@ -117,7 +117,32 @@ input[type='password'] {
 }
 
 .book-img {
-    block-size: 180px;
+    block-size: 240px !important;
+    background-size: cover;
+}
+
+.card-text-overflow {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.article-card-title-overflow {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.article-card-text-overflow {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
 }
 
 footer {
@@ -342,8 +367,8 @@ footer h3 {
     }
 
     .mobile-video iframe {
-        inline-size: 100%;
-        block-size: 220px;
+        inline-size: 100% !important;
+        block-size: 220px !important;
     }
 
     .transcript-summary p {

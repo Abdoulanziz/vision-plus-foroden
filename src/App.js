@@ -11,6 +11,9 @@ import Concept01 from './pages/Concept01.js';
 import Concept02 from './pages/Concept02.js';
 import Concept03 from './pages/Concept03.js';
 import Concept04 from './pages/Concept04.js';
+import Article01 from './pages/Article01.js';
+import Article02 from './pages/Article02.js';
+import Article03 from './pages/Article03.js';
 import Faqs from './pages/Faqs.js';
 import Contact from './pages/Contact.js';
 
@@ -32,6 +35,9 @@ function App() {
             <Route path='/concepts/concept-02' element={<Concept02/>}/>
             <Route path='/concepts/concept-03' element={<Concept03/>}/>
             <Route path='/concepts/concept-04' element={<Concept04/>}/>
+            <Route path='/articles/article-01' element={<Article01/>}/>
+            <Route path='/articles/article-02' element={<Article02/>}/>
+            <Route path='/articles/article-03' element={<Article03/>}/>
             <Route path='/faqs' element={<Faqs/>}/>
             <Route path='/contact' element={<Contact/>}/>
           </Routes>

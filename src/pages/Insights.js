@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../App";
+import { Link } from "react-router-dom";
 
 export default function Insights() {
     const {siteName, setSiteName} = useContext(AppContext);
@@ -101,61 +102,32 @@ export default function Insights() {
                     <div className="row">
                         <div className="col-md-4 mb-4">
                             <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/blogs/blog.jpg" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
+                                <img src="assets/img/blogs/challenges.png" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
                                 <div className="card-body">
-                                    <h5 className="card-title text-secondary">Article Title 1</h5>
-                                    <p className="card-text">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
+                                    <h5 className="card-title article-card-title-overflow">Navigating Challenges in Entrepreneurship: Lessons Learned</h5>
+                                    <p className="card-text article-card-text-overflow">Embarking on the entrepreneurial journey is a thrilling yet daunting endeavor, marked by a series of challenges and obstacles that test one's resilience and determination. Through my own experiences and reflections, I've encountered various challenges in entrepreneurship and gleaned valuable lessons along the way. In this article, I'll share some of these lessons learned and insights gained from navigating the often turbulent waters of entrepreneurship.</p>
+                                    <Link to="/articles/article-03" className="btn btn-secondary">Read More</Link>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4 mb-4">
+                        {/* <div className="col-md-4 mb-4">
                             <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
                                 <img src="assets/img/blogs/blog.jpg" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
                                 <div className="card-body">
-                                    <h5 className="card-title text-secondary">Article Title 2</h5>
-                                    <p className="card-text">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
+                                    <h5 className="card-title article-card-title-overflow">Navigating Challenges in Entrepreneurship: Lessons Learned</h5>
+                                    <p className="card-text article-card-text-overflow">Embarking on the entrepreneurial journey is a thrilling yet daunting endeavor, marked by a series of challenges and obstacles that test one's resilience and determination. Through my own experiences and reflections, I've encountered various challenges in entrepreneurship and gleaned valuable lessons along the way. In this article, I'll share some of these lessons learned and insights gained from navigating the often turbulent waters of entrepreneurship.</p>
+                                    <Link to="/articles/article-02" className="btn btn-secondary">Read More</Link>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="col-md-4 mb-4">
                             <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/blogs/blog.jpg" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
+                                <img src="assets/img/blogs/ai.png" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
                                 <div className="card-body">
-                                    <h5 className="card-title text-secondary">Article Title 3</h5>
-                                    <p className="card-text">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/blogs/blog.jpg" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
-                                <div className="card-body">
-                                    <h5 className="card-title text-secondary">Article Title 4</h5>
-                                    <p className="card-text">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/blogs/blog.jpg" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
-                                <div className="card-body">
-                                    <h5 className="card-title text-secondary">Article Title 5</h5>
-                                    <p className="card-text">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/blogs/blog.jpg" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
-                                <div className="card-body">
-                                    <h5 className="card-title text-secondary">Article Title 6</h5>
-                                    <p className="card-text">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
+                                    <h5 className="card-title article-card-title-overflow">Trends and Opportunities in Emerging Industries</h5>
+                                    <p className="card-text article-card-text-overflow">In today's rapidly evolving business landscape, emerging industries present exciting opportunities for entrepreneurs and innovators to capitalize on new trends, technologies, and consumer preferences. From renewable energy and biotechnology to artificial intelligence and sustainability, emerging industries are reshaping markets and driving economic growth worldwide. In this article, we'll explore some of the key trends and opportunities in emerging industries and discuss strategies for entrepreneurs to capitalize on these trends effectively.
+                                    </p>
+                                    <Link to="/articles/article-01" className="btn btn-secondary">Read More</Link>
                                 </div>
                             </div>
                         </div>
@@ -173,13 +145,27 @@ export default function Insights() {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-6 mb-4">
                             <div className="embed-responsive embed-responsive-16by9 mobile-video">
-                                <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/video-id" allowFullScreen></iframe>
+                                <iframe width="100%" height="400" className="embed-responsive-item" src="https://www.youtube.com/embed/R_CsQIa2Iz4" title="February 16, 2024" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen style={{borderRadius: "13px"}}></iframe>
                             </div>
                         </div>
-                        <div className="col-md-6 transcript-summary">
-                            <p>Transcript of the vidoe will be typing as the video plays.</p>
+                        <div className="col-md-6">
+                            <div className="transcription-summary bg-light p-3" style={{borderRadius: "13px"}}>
+                                <h3>Welcome to Foroden.</h3>
+                                <p>This is a dynamic platform committed to turning visionary ideas into tangible realities through collaboration and partnership.</p>
+                                <p>Join us as we embark on a journey of creativity and impact.</p>
+                                <p>Our vision is to be the focal point of positive change across industries, fostering a culture of innovation and collaboration.</p>
+                                <p>Our mission is to turn visionary ideas into tangible realities through collaboration.</p>
+                                <p>Throughout history, visionaries have transformed the world with their ideas, inspiring us to dream big and persevere.</p>
+                                <p>Every journey begins with a single step.</p>
+                                <p>Dream boldly, collaborate fearlessly, and join us in creating a better future.</p>
+                                <p>Together, we can turn ideas into reality and drive meaningful change.</p>
+                                <p>Sign up now for updates, explore our concepts, and connect with fellow innovators.</p>
+                                <p>Thank you for being part of us.</p>
+                                <p>Let's pulse forward together, one idea at a time.</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -197,31 +183,51 @@ export default function Insights() {
                     <div className="row">
                         <div className="col-md-4">
                             <div className="card border-light border-1 mb-4" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/books/book.png" className="card-img-top book-img" alt="Book Title 1" style={{borderRadius: ".6rem .6rem 0 0"}} />
+                                <img src="assets/img/books/the-lean-startup.png" className="card-img-top book-img" alt="Book Title 1" style={{borderRadius: ".6rem .6rem 0 0"}} />
                                 <div className="card-body">
-                                    <h5 className="card-title">Book Title 1</h5>
-                                    <p className="card-text">Description of the book goes here. More details about the book can displayed, such as the author, publication date, and genre.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
+                                    <h5 className="card-title">"The Lean Startup" by Eric Ries</h5>
+                                    <p className="card-text card-text-overflow">In this groundbreaking book, Eric Ries introduces the concept of the lean startup methodology, which emphasizes rapid experimentation, validated learning, and iterative product development. As we strive to innovate and iterate on our business concepts, this book provides invaluable insights into how startups can navigate uncertainty and achieve sustainable growth.</p>
+                                    <a href="https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898" className="btn btn-secondary">Learn More</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card border-light border-1 mb-4" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/books/book.png" className="card-img-top book-img" alt="Book Title 2" style={{borderRadius: ".6rem .6rem 0 0"}} />
+                                <img src="assets/img/books/master-of-scale.png" className="card-img-top book-img" alt="Book Title 2" style={{borderRadius: ".6rem .6rem 0 0"}} />
                                 <div className="card-body">
-                                    <h5 className="card-title">Book Title 2</h5>
-                                    <p className="card-text">Description of the book goes here. More details about the book can displayed, such as the author, publication date, and genre.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
+                                    <h5 className="card-title">"Masters of Scale" hosted by Reid Hoffman</h5>
+                                    <p className="card-text card-text-overflow">"Masters of Scale" is a captivating podcast hosted by LinkedIn co-founder Reid Hoffman, featuring interviews with some of the world's most successful entrepreneurs and business leaders. Through candid conversations and insightful anecdotes, each episode offers actionable advice and lessons learned on scaling businesses, fostering innovation, and driving meaningful impact.</p>
+                                    <a href="https://mastersofscale.com/" className="btn btn-secondary">Learn More</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card border-light border-1 mb-4" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/books/book.png" className="card-img-top book-img" alt="Book Title 3" style={{borderRadius: ".6rem .6rem 0 0"}} />
+                                <img src="assets/img/books/great-leaders.png" className="card-img-top book-img" alt="Book Title 3" style={{borderRadius: ".6rem .6rem 0 0"}} />
                                 <div className="card-body">
-                                    <h5 className="card-title">Book Title 3</h5>
-                                    <p className="card-text">Description of the book goes here. More details about the book can displayed, such as the author, publication date, and genre.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
+                                    <h5 className="card-title">"How Great Leaders Inspire Action" by Simon Sinek</h5>
+                                    <p className="card-text card-text-overflow" style={{maxHeight: "100px"}}>In this inspiring TED Talk, renowned author and speaker Simon Sinek explores the concept of "The Golden Circle" and discusses why some leaders and organizations are able to inspire action and drive change while others struggle to do so. As we strive to build a community of visionary leaders and changemakers, this talk offers valuable insights into the power of purpose-driven leadership and communication.</p>
+                                    <a href="https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action" className="btn btn-secondary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="card border-light border-1 mb-4" style={{borderRadius: ".6rem"}}>
+                                <img src="assets/img/books/missing.png" className="card-img-top book-img" alt="Book Title 3" style={{borderRadius: ".6rem .6rem 0 0"}} />
+                                <div className="card-body">
+                                    <h5 className="card-title">"Design Thinking for Innovation" by IDEO U</h5>
+                                    <p className="card-text card-text-overflow">IDEO U's "Design Thinking for Innovation" course offers a comprehensive introduction to design thinking principles and methodologies, providing practical tools and techniques for fostering creativity, collaboration, and problem-solving. As we embark on our journey to innovate and realize our business concepts, this course equips us with the mindset and skillset needed to tackle...</p>
+                                    <a href="https://www.ideou.com/products/design-thinking-for-innovation" className="btn btn-secondary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="card border-light border-1 mb-4" style={{borderRadius: ".6rem"}}>
+                                <img src="assets/img/books/the-state-of-innovation.png" className="card-img-top book-img" alt="Book Title 3" style={{borderRadius: ".6rem .6rem 0 0"}} />
+                                <div className="card-body">
+                                    <h5 className="card-title">"The State of Innovation" by McKinsey & Company</h5>
+                                    <p className="card-text card-text-overflow">McKinsey & Company's annual "State of Innovation" report provides a comprehensive overview of global trends, emerging technologies, and disruptive innovations shaping various industries. By staying informed about the latest insights and developments in innovation, we can identify new opportunities, anticipate market shifts, and stay ahead of the curve in our pursuit of sustainable solutions and impact.</p>
+                                    <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/the-state-of-innovation-2022" className="btn btn-secondary">Learn More</a>
                                 </div>
                             </div>
                         </div>
