@@ -1,9 +1,14 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "../App";
 import { Link } from "react-router-dom";
 
 export default function Concepts() {
     const {siteName, setSiteName} = useContext(AppContext);
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return(
         <>
             <header className="py-5 business-concepts-header">

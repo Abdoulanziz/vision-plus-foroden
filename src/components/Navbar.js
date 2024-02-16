@@ -26,22 +26,22 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse justify-content-center" id="navcol-1">
                         <ul className="navbar-nav text-center">
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/">Home</NavLink>
+                                <NavLink className="nav-link" activeClassName="active" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/insights">Founders' Insights</NavLink>
+                                <NavLink className="nav-link" activeClassName="active" to="/insights">Founders' Insights</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/concepts">Business Concepts</NavLink>
+                                <NavLink className="nav-link" activeClassName="active" to="/concepts">Business Concepts</NavLink>
                             </li>
+                            {/* <li className="nav-item">
+                                <NavLink className="nav-link" activeClassName="active" to="/faqs">FAQs</NavLink>
+                            </li> */}
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/faqs">FAQs</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="/contact">Contact</NavLink>
+                                <NavLink className="nav-link" activeClassName="active" to="/contact">Contact</NavLink>
                             </li>
                         </ul>
-                        <NavLink className="btn btn-secondary navbar-btn" role="button" to="/">Featured Projects</NavLink>
+                        <NavLink className="btn btn-secondary navbar-btn" role="button" to="/concepts">Featured Projects</NavLink>
                     </div>
                 </div>
             </nav>
@@ -67,9 +67,9 @@ export default function Navbar() {
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to="/concepts" onClick={toggleModal}>Business Concepts</NavLink>
                                     </li>
-                                    <li className="nav-item">
+                                    {/* <li className="nav-item">
                                         <NavLink className="nav-link" to="/faqs" onClick={toggleModal}>FAQs</NavLink>
-                                    </li>
+                                    </li> */}
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to="/contact" onClick={toggleModal}>Contact</NavLink>
                                     </li>

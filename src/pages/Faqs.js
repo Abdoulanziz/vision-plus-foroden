@@ -1,8 +1,13 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "../App";
 
 export default function Faqs() {
     const {siteName, setSiteName} = useContext(AppContext);
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return(
         <>
             <section className="mt-5 py-5 bg-light">

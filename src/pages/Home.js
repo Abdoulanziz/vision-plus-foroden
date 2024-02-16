@@ -1,9 +1,14 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "../App";
 import { Link } from "react-router-dom";
 
 export default function Home() {
     const {siteName, setSiteName} = useContext(AppContext);
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return(
         <>
             <header className="py-5 home-header">
@@ -12,7 +17,7 @@ export default function Home() {
                         <div className="col-lg-6 order-2 order-lg-1 text-center text-lg-start mb-5 mb-lg-0 text-text-content">
                             <h1 className="display-4 fw-bold mb-3 text-secondary">Fostering Innovation, Realizing Concepts</h1>
                             <p className="fs-5 mb-4 text-secondary">Your Pathway to Business Success</p>
-                            <button className="btn btn-lg bg-secondary me-3">Explore More</button>
+                            <Link className="btn btn-lg bg-secondary me-3" to="/concepts">Explore More</Link>
                         </div>
                     </div>
                 </div>
@@ -70,11 +75,11 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="business-concepts">
+            <section className="business-concepts" style={{backgroundColor: "#ffb900"}}>
                 <div className="container bg-primary-gradient py-5">
                     <div className="row">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
-                            <p className="fw-bold text-secondary mb-2">Business Concepts</p>
+                            <p className="fw-bold text-primary mb-2">Business Concepts</p>
                             <h3 className="fw-bold">Learn more about our featured business concepts</h3>
                         </div>
                     </div>
@@ -133,7 +138,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="py-5 founders-insights">
+            {/* <section className="py-5 founders-insights">
                 <div className="container">
                     <div className="row mb-5">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
@@ -207,7 +212,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className="py-5 bg-light latest-posts">
                 <div className="container">
@@ -220,61 +225,22 @@ export default function Home() {
                     <div className="row">
                         <div className="col-md-4 mb-4">
                             <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/blogs/blog.jpg" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
+                                <img src="assets/img/blogs/challenges.png" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
                                 <div className="card-body">
-                                    <h5 className="card-title text-secondary">Post Title 1</h5>
-                                    <p className="card-text">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
+                                    <h5 className="card-title article-card-title-overflow">Navigating Challenges in Entrepreneurship: Lessons Learned</h5>
+                                    <p className="card-text article-card-text-overflow">Embarking on the entrepreneurial journey is a thrilling yet daunting endeavor, marked by a series of challenges and obstacles that test one's resilience and determination. Through my own experiences and reflections, I've encountered various challenges in entrepreneurship and gleaned valuable lessons along the way. In this article, I'll share some of these lessons learned and insights gained from navigating the often turbulent waters of entrepreneurship.</p>
+                                    <Link to="/articles/article-03" className="btn btn-secondary">Read More</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-4 mb-4">
                             <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/blogs/blog.jpg" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
+                                <img src="assets/img/blogs/ai.png" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
                                 <div className="card-body">
-                                    <h5 className="card-title text-secondary">Post Title 2</h5>
-                                    <p className="card-text">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/blogs/blog.jpg" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
-                                <div className="card-body">
-                                    <h5 className="card-title text-secondary">Post Title 3</h5>
-                                    <p className="card-text">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/blogs/blog.jpg" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
-                                <div className="card-body">
-                                    <h5 className="card-title text-secondary">Post Title 4</h5>
-                                    <p className="card-text">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/blogs/blog.jpg" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
-                                <div className="card-body">
-                                    <h5 className="card-title text-secondary">Post Title 5</h5>
-                                    <p className="card-text">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
-                                <img src="assets/img/blogs/blog.jpg" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
-                                <div className="card-body">
-                                    <h5 className="card-title text-secondary">Post Title 6</h5>
-                                    <p className="card-text">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="#" className="btn btn-secondary">Read More</a>
+                                    <h5 className="card-title article-card-title-overflow">Trends and Opportunities in Emerging Industries</h5>
+                                    <p className="card-text article-card-text-overflow">In today's rapidly evolving business landscape, emerging industries present exciting opportunities for entrepreneurs and innovators to capitalize on new trends, technologies, and consumer preferences. From renewable energy and biotechnology to artificial intelligence and sustainability, emerging industries are reshaping markets and driving economic growth worldwide. In this article, we'll explore some of the key trends and opportunities in emerging industries and discuss strategies for entrepreneurs to capitalize on these trends effectively.
+                                    </p>
+                                    <Link to="/articles/article-01" className="btn btn-secondary">Read More</Link>
                                 </div>
                             </div>
                         </div>
@@ -282,7 +248,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="py-5">
+            {/* <section className="py-5">
                 <div className="container">
                     <div className="row mb-5">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
@@ -327,7 +293,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className="py-4 py-xl-5 how-to-reach-us" style={{backgroundColor: "#ffb900"}}>
                 <div className="container" style={{backgroundColor: "#ffd200", borderRadius: "9px"}}>

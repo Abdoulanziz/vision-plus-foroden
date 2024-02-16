@@ -1,8 +1,13 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "../App";
 
 export default function Concept02() {
     const {siteName, setSiteName} = useContext(AppContext);
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return(
         <>
             <section className="py-5 bg-light">

@@ -1,9 +1,14 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "../App";
 import { Link } from "react-router-dom";
 
 export default function Insights() {
     const {siteName, setSiteName} = useContext(AppContext);
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return(
         <>
             <header className="py-5" style={{ height: '50vh' }}>
@@ -17,20 +22,20 @@ export default function Insights() {
                             <div className="mt-5 d-flex justify-content-center">
                                 <ul className="nav nav-pills">
                                     <li className="nav-item">
-                                        <a className="nav-link active" href="">All Posts</a>
+                                        <a className="nav-link active" href="#">All Posts</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="">Insights</a>
+                                        <a className="nav-link" href="#">Insights</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="">Reports</a>
+                                        <a className="nav-link" href="#">Concepts</a>
                                     </li>
-                                    <li className="nav-item">
+                                    {/* <li className="nav-item">
                                         <a className="nav-link" href="">Angel Investing</a>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="">Startup Stories</a>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
                         </div>
@@ -39,7 +44,7 @@ export default function Insights() {
             </header>
 
 
-            <section className="" style={{backgroundColor: "#00a98f"}}>
+            {/* <section className="" style={{backgroundColor: "#00a98f"}}>
                 <div className="container py-5">
                     <div className="row">
                         <div className="connecting-founders-item-content">
@@ -88,7 +93,7 @@ export default function Insights() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
             <section className="bg-light py-5 latest-posts">
@@ -146,9 +151,34 @@ export default function Insights() {
                     </div>
                     <div className="row">
                         <div className="col-md-6 mb-4">
-                            <div className="embed-responsive embed-responsive-16by9 mobile-video">
+                            {/* <div className="embed-responsive embed-responsive-16by9 mobile-video">
                                 <iframe width="100%" height="400" className="embed-responsive-item" src="https://www.youtube.com/embed/R_CsQIa2Iz4" title="February 16, 2024" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen style={{borderRadius: "13px"}}></iframe>
+                            </div> */}
+
+                            <div
+                                className="embed-responsive embed-responsive-16by9 mobile-video"
+                                style={{
+                                    borderRadius: "13px",
+                                    overflow: "hidden",
+                                    position: "relative",
+                                    marginBottom: "1rem"
+                                }}
+                            >
+                                <video
+                                    controls
+                                    className="embed-responsive-item"
+                                    style={{
+                                        width: "100%",
+                                        height: "100%",
+                                        objectFit: "cover",
+                                        borderRadius: "13px"
+                                    }}
+                                >
+                                    <source src="assets/vid/video.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
+
                         </div>
                         <div className="col-md-6">
                             <div className="transcription-summary bg-light p-3" style={{borderRadius: "13px"}}>
