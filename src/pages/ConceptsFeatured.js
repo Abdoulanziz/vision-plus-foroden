@@ -1,13 +1,9 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { AppContext } from "../App";
 import { Link } from "react-router-dom";
 
-export default function Concepts() {
+export default function ConceptsFeatured() {
     const {siteName, setSiteName} = useContext(AppContext);
-    
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
     
     return(
         <>
@@ -35,10 +31,10 @@ export default function Concepts() {
                     <div className="mt-5 mb-5 d-flex justify-content-center">
                         <ul className="nav nav-pills">
                             <li className="nav-item">
-                                <Link className="nav-link active" to="/concepts">All Concepts</Link>
+                                <Link className="nav-link" to="/concepts">All Concepts</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/concepts/featured">Featured</Link>
+                                <Link className="nav-link active" to="/concepts/featured">Featured</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/concepts/agriculture">Agriculture</Link>

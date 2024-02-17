@@ -11,42 +11,137 @@ export default function Faqs() {
     return(
         <>
             <section className="mt-5 py-5 bg-light">
-                <div className="container py-5">
-                <h2 className="mb-5">Frequently Asked Questions (FAQs)</h2>
-                
-                <h3>#3 General Questions</h3>
-                <div className="accordion text-muted" role="tablist" id="accordion-1">
-                    <div className="accordion-item">
-                        <h2 className="accordion-header" role="tab"><button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1">What is VisionPlus?</button></h2>
-                        <div className="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#accordion-1">
-                            <div className="accordion-body">
-                                <p>VisionPlus is a comprehensive platform dedicated to providing valuable insights, resources, and support for entrepreneurs, startups, and small businesses. </p>
-                                <p className="mb-0">We offer a wide range of services, including business concept development, mentorship, and access to a network of industry experts.
-                                </p>
+                <div className="container" style={{ border: "1px solid #f3f3f3", backgroundColor: "#fff", paddingBlock: "12px" }}>
+                    <h2 className="mb-5">Frequently Asked Questions (FAQs)</h2>
+                    
+                    <h3>#3 General Questions</h3>
+                    <div className="accordion text-muted" role="tablist" id="accordion-1">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header" role="tab">
+                                <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1">
+                                    What is foroden.com?
+                                </button>
+                            </h2>
+                            <div className="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div className="accordion-body">
+                                    <p>Foroden is a platform that serves as the starting point for our future holding company, which will encompass subsidiaries in various business concepts featured on our platform.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="accordion-item">
-                        <h2 className="accordion-header" role="tab"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">How can VisionPlus help me as an entrepreneur?</button></h2>
-                        <div className="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1">
-                            <div className="accordion-body">
-                                <p className="mb-0">VisionPlus aims to empower entrepreneurs by offering practical guidance, educational content, and networking opportunities. Whether you're just starting your entrepreneurial journey or looking to grow your existing business, VisionPlus provides the tools and resources you need to succeed.</p>
+                        <div className="accordion-item">
+                            <h2 className="accordion-header" role="tab">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">
+                                    What types of business concepts are featured on Foroden?
+                                </button>
+                            </h2>
+                            <div className="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div className="accordion-body">
+                                    <p>Foroden features a diverse range of business concepts across different industries, including technology, finance, healthcare, sustainability, and more.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="accordion-item">
-                        <h2 className="accordion-header" role="tab"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">What type of content does VisionPlus offer?</button></h2>
-                        <div className="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
-                            <div className="accordion-body">
-                                <p className="mb-0">At VisionPlus, we offer a diverse range of content tailored to the needs of entrepreneurs. This includes articles, guides, case studies, webinars, and interviews with successful founders. Our content covers various topics such as business strategy, marketing, finance, technology, and leadership.</p>
+                        <div className="accordion-item">
+                            <h2 className="accordion-header" role="tab">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">
+                                    How does Foroden help in realizing business concepts?
+                                </button>
+                            </h2>
+                            <div className="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div className="accordion-body">
+                                    <p>Foroden aims for realizing its business concepts by getting help from talented individuals, experienced professionals, and well-established businesses in relevant fields.</p>
+                                </div>
                             </div>
                         </div>
+                        <div className="accordion-item">
+                            <h2 className="accordion-header" role="tab">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-4" aria-expanded="false" aria-controls="accordion-1 .item-4">
+                                    Who is the target audience for Foroden?
+                                </button>
+                            </h2>
+                            <div className="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div className="accordion-body">
+                                    <p>Our target audience includes experienced professionals, talented individuals, and well-established businesses in relevant fields who are interested in collaborating and partnering with us to realize innovative business concepts.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item">
+                            <h2 className="accordion-header" role="tab">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-5" aria-expanded="false" aria-controls="accordion-1 .item-5">
+                                    How can I get involved with Foroden?
+                                </button>
+                            </h2>
+                            <div className="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div className="accordion-body">
+                                    <p>There are several ways to get involved with Foroden, including exploring our featured business concepts, joining our network of professionals, attending events and webinars, and contacting us directly for partnership opportunities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item">
+                            <h2 className="accordion-header" role="tab">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-6" aria-expanded="false" aria-controls="accordion-1 .item-6">
+                                    What is the process for submitting a request for collaboration in a business concept with Foroden?
+                                </button>
+                            </h2>
+                            <div className="accordion-collapse collapse item-6" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div className="accordion-body">
+                                    <p>If you are interested in collaboration with Foroden in a business concept, you can reach out to us through our contact form or email. Our team will review your request and assess its potential for collaboration or partnership.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item">
+                            <h2 className="accordion-header" role="tab">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-7" aria-expanded="false" aria-controls="accordion-1 .item-7">
+                                    Are there any fees or costs associated with participating in Foroden.com?
+                                </button>
+                            </h2>
+                            <div className="accordion-collapse collapse item-7" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div className="accordion-body">
+                                    <p>Foroden does not charge any fees for participation. However, there may be costs associated with specific collaboration or partnership opportunities, which will be discussed and agreed upon on a case-by-case basis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item">
+                            <h2 className="accordion-header" role="tab">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-8" aria-expanded="false" aria-controls="accordion-1 .item-8">
+                                    How can I stay updated on news and events related to Foroden.com?
+                                </button>
+                            </h2>
+                            <div className="accordion-collapse collapse item-8" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div className="accordion-body">
+                                    <p>You can stay updated on news and events related to Foroden by subscribing to our newsletter, following us on social media, or visiting our website regularly for updates and announcements.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item">
+                            <h2 className="accordion-header" role="tab">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-9" aria-expanded="false" aria-controls="accordion-1 .item-9">
+                                    What is the timeline for realizing business concepts featured on Foroden.com?
+                                </button>
+                            </h2>
+                            <div className="accordion-collapse collapse item-9" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div className="accordion-body">
+                                    <p>The timeline for realizing business concepts may vary depending on factors such as complexity, resources, and collaboration opportunities. We strive to move projects forward in a meaningful and timely manner, prioritizing quality and sustainability.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item">
+                            <h2 className="accordion-header" role="tab">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-10" aria-expanded="false" aria-controls="accordion-1 .item-10">
+                                    How can I contact Foroden for further inquiries or partnership opportunities?
+                                </button>
+                            </h2>
+                            <div className="accordion-collapse collapse item-10" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div className="accordion-body">
+                                    <p>You can contact Foroden through our contact form on the website or by sending us an email at info@foroden.com. Our team will respond to your inquiries promptly and provide assistance as needed.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
                 </div>
             </section>
 
-            <section className="py-5">
+            {/* <section className="py-5">
                 <div className="container">
 
                 <h3 className="mt-5">#2 Technical Questions</h3>
@@ -65,10 +160,10 @@ export default function Faqs() {
                 </div>
                 </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className="py-5 bg-light">
-                <div className="container">
+                <div className="container" style={{ border: "1px solid #f3f3f3", backgroundColor: "#fff", padding: "24px" }}>
 
                 <h3>Could not find your question?</h3>
                 <div className="mt-5">
