@@ -72,18 +72,6 @@ export default function Article01() {
                     </div>
                 </div>
             </section>
-
-            <section className="py-4 py-xl-5 how-to-reach-us" style={{backgroundColor: "#ffb900"}}>
-                <div className="container" style={{backgroundColor: "#ffd200", borderRadius: "9px"}}>
-                    <div className="container-inner text-dark border border-0 border-secondary d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5" style={{borderRadius: ".6rem"}}>
-                        <div className="pb-2 pb-lg-1">
-                            <h2 className="fw-bold text-dark mb-2">Want to reach us?</h2>
-                            <p className="mb-0">This is a sample text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div className="my-2"><a className="btn btn-light fs-5 py-2 px-4" role="button" href="/contact">Contact us</a></div>
-                    </div>
-                </div>
-            </section>
         </>
     )
 }
