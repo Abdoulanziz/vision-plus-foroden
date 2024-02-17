@@ -1,5 +1,6 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { AppContext } from "../App";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
     const {siteName, setSiteName} = useContext(AppContext);
@@ -7,6 +8,26 @@ export default function Contact() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+        .sendForm('service_j598x3b', 'template_qlvtvfm', form.current, {
+            publicKey: 'CuvXEyY2LSkLHbony',
+        })
+        .then(
+            () => {
+                console.log('SUCCESS!');
+                e.target.reset();
+            },
+            (error) => {
+                console.log('FAILED...', error.text);
+            },
+        );
+    };
     
     return(
         <>
@@ -21,9 +42,9 @@ export default function Contact() {
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-6">
                             <div>
-                                <form className="p-3 p-xl-4" data-bs-theme="light">
-                                    <div className="mb-3"><input className="form-control" type="text" id="name" name="name" placeholder="Full name"/></div>
-                                    <div className="mb-3"><input className="form-control" type="email" id="email" name="email" placeholder="Email address"/></div>
+                                <form className="p-3 p-xl-4" data-bs-theme="light" ref={form} onSubmit={sendEmail}>
+                                    <div className="mb-3"><input className="form-control" type="text" id="name" name="from_name" placeholder="Full name"/></div>
+                                    <div className="mb-3"><input className="form-control" type="email" id="email" name="user_email" placeholder="Email address"/></div>
                                     <div className="mb-3"><input className="form-control" type="text" id="subject" name="subject" placeholder="Subject"/></div>
                                     <div className="mb-3"><textarea className="form-control" id="message-1" name="message" rows="6" placeholder="Message"></textarea></div>
                                     <div><button className="btn btn-secondary d-block w-100" type="submit">Send </button></div>
