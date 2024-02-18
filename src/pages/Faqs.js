@@ -10,11 +10,11 @@ export default function Faqs() {
     
     return(
         <>
-            <section className="mt-5 py-5 bg-light">
-                <div className="container" style={{ border: "1px solid #f3f3f3", backgroundColor: "#fff", paddingBlock: "12px" }}>
+            <section className="mt-5 py-5" style={{backgroundColor: "#ffb900"}}>
+                <div className="container" style={{borderRadius: "9px", backgroundColor: "#ffb900", paddingBlock: "12px" }}>
                     <h2 className="mb-5">Frequently Asked Questions (FAQs)</h2>
                     
-                    <h3>#3 General Questions</h3>
+                    {/* <h3>#1 General Questions</h3> */}
                     <div className="accordion text-muted" role="tablist" id="accordion-1">
                         <div className="accordion-item">
                             <h2 className="accordion-header" role="tab">
@@ -163,7 +163,7 @@ export default function Faqs() {
             </section> */}
 
             <section className="py-5 bg-light">
-                <div className="container" style={{ border: "1px solid #f3f3f3", backgroundColor: "#fff", padding: "24px" }}>
+                <div className="container" style={{borderRadius: "9px", backgroundColor: "#fff", padding: "24px", color: "red !important" }}>
 
                 <h3>Could not find your question?</h3>
                 <div className="mt-5">

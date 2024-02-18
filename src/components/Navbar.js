@@ -67,9 +67,9 @@ export default function Navbar() {
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to="/concepts" onClick={toggleModal}>Business Concepts</NavLink>
                                     </li>
-                                    {/* <li className="nav-item">
+                                    <li className="nav-item">
                                         <NavLink className="nav-link" to="/faqs" onClick={toggleModal}>FAQs</NavLink>
-                                    </li> */}
+                                    </li>
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to="/contact" onClick={toggleModal}>Contact</NavLink>
                                     </li>

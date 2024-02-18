@@ -96,6 +96,20 @@ input[type='password'] {
     margin-inline-end: 1px;
 }
 
+.accordion .accordion-item {
+    border: 1px solid #ffd200;
+    background-color: #ffd200;
+    border-radius: 13px;
+    margin-block: .2rem;
+}
+
+.accordion .accordion-header button {
+    border-radius: 13px;
+    margin-block-end: .2rem;
+    font-weight: 500;
+    padding-block: 1.6rem;
+}
+
 
 .home-header {
     block-size: 100vh;
