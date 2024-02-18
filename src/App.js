@@ -6,6 +6,8 @@ import Navbar from './components/Navbar.js';
 import Footer from './components/Footer.js';
 import Home from './pages/Home.js';
 import Insights from './pages/Insights.js';
+import InsightsAgriculture from './pages/InsightsAgriculture.js';
+import InsightsCleanEnergy from './pages/InsightsCleanEnergy.js';
 import Concepts from './pages/Concepts.js';
 import ConceptsFeatured from './pages/ConceptsFeatured.js';
 import ConceptsFashion from './pages/ConceptsFashion.js';
@@ -39,6 +41,8 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/insights' element={<Insights/>}/>
+            <Route path='/insights/agriculture' element={<InsightsAgriculture/>}/>
+            <Route path='/insights/clean-energy' element={<InsightsCleanEnergy/>}/>
             <Route path='/concepts' element={<Concepts/>}/>
             <Route path='/concepts/featured' element={<ConceptsFeatured/>}/>
             <Route path='/concepts/fashion' element={<ConceptsFashion/>}/>

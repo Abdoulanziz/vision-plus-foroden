@@ -22,13 +22,13 @@ export default function Insights() {
                             <div className="mt-5 d-flex justify-content-center">
                                 <ul className="nav nav-pills">
                                     <li className="nav-item">
-                                        <Link className="nav-link active" to="/insights">All Insights</Link>
+                                        <Link className="nav-link" to="/insights">All Insights</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/insights/agriculture">Agriculture</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/insights/clean-energy">Clean Energy</Link>
+                                        <Link className="nav-link active" to="/insights/clean-energy">Clean Energy</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -99,26 +99,6 @@ export default function Insights() {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-4 mb-4">
-                            <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
-                                <img src="/assets/img/blogs/challenges.png" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
-                                <div className="card-body">
-                                    <h5 className="card-title article-card-title-overflow">Navigating Challenges in Entrepreneurship: Lessons Learned</h5>
-                                    <p className="card-text article-card-text-overflow">Embarking on the entrepreneurial journey is a thrilling yet daunting endeavor, marked by a series of challenges and obstacles that test one's resilience and determination. Through my own experiences and reflections, I've encountered various challenges in entrepreneurship and gleaned valuable lessons along the way. In this article, I'll share some of these lessons learned and insights gained from navigating the often turbulent waters of entrepreneurship.</p>
-                                    <Link to="/articles/article-03" className="btn btn-secondary">Read More</Link>
-                                </div>
-                            </div>
-                        </div>
-                        {/* <div className="col-md-4 mb-4">
-                            <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
-                                <img src="/assets/img/blogs/blog.jpg" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />
-                                <div className="card-body">
-                                    <h5 className="card-title article-card-title-overflow">Navigating Challenges in Entrepreneurship: Lessons Learned</h5>
-                                    <p className="card-text article-card-text-overflow">Embarking on the entrepreneurial journey is a thrilling yet daunting endeavor, marked by a series of challenges and obstacles that test one's resilience and determination. Through my own experiences and reflections, I've encountered various challenges in entrepreneurship and gleaned valuable lessons along the way. In this article, I'll share some of these lessons learned and insights gained from navigating the often turbulent waters of entrepreneurship.</p>
-                                    <Link to="/articles/article-02" className="btn btn-secondary">Read More</Link>
-                                </div>
-                            </div>
-                        </div> */}
                         <div className="col-md-4 mb-4">
                             <div className="card border-light border-1" style={{borderRadius: ".6rem"}}>
                                 <img src="/assets/img/blogs/ai.png" className="card-img-top" alt="Blog Image" style={{borderRadius: ".6rem .6rem 0 0"}} />

@@ -1,9 +1,16 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { AppContext } from "../App";
 import { Link } from "react-router-dom";
 
-export default function ConceptsFashion() {
+export default function Concepts() {
     const {siteName, setSiteName} = useContext(AppContext);
+    const businessConceptsRef = useRef(null);
+
+    const scrollToBusinessConcepts = () => {
+        if (businessConceptsRef.current) {
+            businessConceptsRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     
     return(
         <>
@@ -15,12 +22,12 @@ export default function ConceptsFashion() {
                         <div className="col-lg-6 order-1 order-lg-2 text-center text-lg-start mb-5 mb-lg-0 text-text-content">
                             <h1 className="display-4 fw-bold mb-3 text-dark">Explore our super Business Concepts.</h1>
                             <p className="fs-5 mb-4 text-dark">Our team is ready to empower progress and inspire excellence.</p>
-                            <Link className="btn btn-lg bg-secondary me-3" to="#business-concepts">Explore Now</Link>
+                            <Link className="btn btn-lg bg-secondary me-3" onClick={scrollToBusinessConcepts}>Explore Now</Link>
                         </div>
                     </div>
                 </div>
             </header>
-            <section className="py-5" style={{backgroundColor: "#fff"}} id="business-concepts">
+            <section className="py-5" style={{backgroundColor: "#fff"}} ref={businessConceptsRef}>
                 <div className="container py-5">
                     <div className="row mb-5">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
@@ -51,7 +58,7 @@ export default function ConceptsFashion() {
                         </ul>
                     </div>
                     <div className="row row-cols-1 row-cols-md-2 mx-auto business-concept-container" style={{maxWidth: "900px"}}>
-                        <div className="col mb-5 business-concept-img-wrapper"><img className="rounded img-fluid business-concept-img" src="assets/img/illustrations/fashion.png" style={{blockSize: "300px", inlineSize: "300px"}}/></div>
+                        <div className="col mb-5 business-concept-img-wrapper"><img className="rounded img-fluid business-concept-img" src={`/assets/img/illustrations/fashion.png?${new Date().getTime()}`} style={{blockSize: "300px", inlineSize: "300px"}}/></div>
                         <div className="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                             <div>
                                 <h5 className="fs-3 fw-bold mb-4">Fashion & Clothing</h5>

@@ -19,7 +19,7 @@ export default function Footer() {
                 <div className="container py-4 py-lg-5">
                     <div className="row row-cols-2 row-cols-md-4 footer-content-wrapper">
                         <div className="col-12 col-md-3 content-inner">
-                            <div className="fw-bold d-flex align-items-center mb-2"><img style={{minHeight: ""}} src="assets/img/logo/foroden-logo.svg" alt="Foroden logo" /></div>
+                            <div className="fw-bold d-flex align-items-center mb-2"><img style={{minHeight: ""}} src="/assets/img/logo/foroden-logo.svg" alt="Foroden logo" /></div>
                             <p className="">Fostering Innovation, Realizing Concepts</p>
                         </div>
                         <div className="col-sm-4 col-md-3 text-lg-start d-flex flex-column content-inner">

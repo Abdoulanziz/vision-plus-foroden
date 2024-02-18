@@ -14,7 +14,7 @@ export default function Navbar() {
                 <div className="container d-flex justify-content-between align-items-center">
                     <div className="col">
                         <a href="/" className="navbar-brand">
-                            <img src="assets/img/logo/foroden-logo.svg" alt="Logo" className="navbar-logo" />
+                            <img src="/assets/img/logo/foroden-logo.svg" alt="Logo" className="navbar-logo" />
                             <span></span>
                         </a>
                     </div>
@@ -41,7 +41,7 @@ export default function Navbar() {
                                 <NavLink className="nav-link" activeClassName="active" to="/contact">Contact</NavLink>
                             </li>
                         </ul>
-                        <NavLink className="btn btn-secondary navbar-btn" role="button" to="/concepts">Featured Projects</NavLink>
+                        <NavLink className="btn btn-secondary navbar-btn" role="button" to="/concepts/featured">Featured Projects</NavLink>
                     </div>
                 </div>
             </nav>
@@ -51,7 +51,7 @@ export default function Navbar() {
                         <div className="navbar-modal-content modal-content" style={{ height: "100%", border: "none" }}>
                             <div className="modal-header">
                                 <a href="/" className="navbar-brand">
-                                    <img src="assets/img/logo/foroden-logo.svg" alt="Logo" className="navbar-logo" />
+                                    <img src="/assets/img/logo/foroden-logo.svg" alt="Logo" className="navbar-logo" />
                                     <span></span>
                                 </a>
                                 <button type="button" className="btn-close" onClick={toggleModal} aria-label="Close"></button>
