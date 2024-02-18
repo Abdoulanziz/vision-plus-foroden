@@ -10,8 +10,8 @@ export default function Collaborate() {
     
     return(
         <>
-            <section className="py-5 bg-light">
-                <div className="container mt-5" style={{border: "1px solid #f3f3f3", backgroundColor: "#fff", paddingBlock: "12px"}}>
+            <section className="py-5">
+                <div className="container mt-5" style={{borderInline: "1px solid #f3f3f3", backgroundColor: "#fff", paddingBlock: "12px"}}>
                     <div className="row">
                         <div className="col">
                             <h2>Collaboration with Foroden</h2>
