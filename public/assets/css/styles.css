@@ -172,9 +172,50 @@ footer h3 {
     color: #939292 !important;
 }
 
+.cookies-banner {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.cookies-banner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cookies-banner p {
+  margin: 0;
+}
+
+.cookies-banner a {
+  color: #fff;
+}
+
+.cookies-banner button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.cookies-banner button:hover {
+  background-color: #0056b3;
+}
+
 .mission-content,
 .vision-content {
-    block-size: 460px !important;
+    min-block-size: 460px !important;
     text-align: justify;
 }
 
