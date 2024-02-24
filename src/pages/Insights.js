@@ -38,7 +38,7 @@ export default function Insights() {
             </header>
 
 
-            {/* <section className="" style={{backgroundColor: "#00a98f"}}>
+            <section className="" style={{backgroundColor: "#00a98f"}}>
                 <div className="container py-5">
                     <div className="row">
                         <div className="connecting-founders-item-content">
@@ -56,24 +56,24 @@ export default function Insights() {
                             <div className="carousel-inner">
                                 <div className="carousel-item active" data-bs-interval="10000">
                                 <img src="/assets/img/sessions/session.webp" className="d-block w-100" alt="..."  style={{borderRadius: ".6rem"}} />
-                                <div className="carousel-caption d-none d-md-block">
+                                {/* <div className="carousel-caption d-none d-md-block">
                                     <h5>First slide label</h5>
                                     <p>Some representative placeholder content for the first slide.</p>
-                                </div>
+                                </div> */}
                                 </div>
                                 <div className="carousel-item" data-bs-interval="2000">
                                 <img src="/assets/img/sessions/session.webp" className="d-block w-100" alt="..."  style={{borderRadius: ".6rem"}} />
-                                <div className="carousel-caption d-none d-md-block">
+                                {/* <div className="carousel-caption d-none d-md-block">
                                     <h5>Second slide label</h5>
                                     <p>Some representative placeholder content for the second slide.</p>
-                                </div>
+                                </div> */}
                                 </div>
                                 <div className="carousel-item">
                                 <img src="/assets/img/sessions/session.webp" className="d-block w-100" alt="..."  style={{borderRadius: ".6rem"}} />
-                                <div className="carousel-caption d-none d-md-block">
+                                {/* <div className="carousel-caption d-none d-md-block">
                                     <h5>Third slide label</h5>
                                     <p>Some representative placeholder content for the third slide.</p>
-                                </div>
+                                </div> */}
                                 </div>
                             </div>
                             <button className="carousel-control-prev" type="button" data-bs-target="#insights-carousel" data-bs-slide="prev">
@@ -87,7 +87,7 @@ export default function Insights() {
                         </div>
                     </div>
                 </div>
-            </section> */}
+            </section>
 
 
             <section className="bg-light py-5 latest-posts">

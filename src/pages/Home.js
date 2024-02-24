@@ -65,10 +65,6 @@ export default function Home() {
                                     <div className="mission-content">
                                         <h4 className="fw-bold">Mission</h4>
                                         <p className="text-muted">Establishing mutual understanding and connection with our audience, facilitating collaboration and partnership.</p>
-                                        <p className="text-muted">Providing a platform to prepare prerequisites necessary for realizing business concepts across industries.</p>
-                                        <p className="text-muted">Addressing pain points within each business concept, offering innovative solutions for realization.</p>
-                                        <p className="text-muted">Transparently sharing thoughts and insights from the inception stage with potential partners to foster trust and collaboration.</p>
-                                        <p className="text-muted">Actively seeking experienced individuals, talented professionals, and established businesses as strategic partners for the successful realization of business concepts.</p>
                                     </div>
                                 </div>
                             </div>
@@ -83,11 +79,7 @@ export default function Home() {
                                         </svg></div>
                                     <div className="vision-content">
                                         <h4 className="fw-bold">Vision</h4>
-                                        <p className="text-muted">Establishing our platform as the foundational cornerstone for our holding company's future, encompassing subsidiaries in various business concepts to bring them to fruition.</p>
-                                        <p className="text-muted">Unifying talented individuals and forging strategic partnerships within targeted industries to lay the groundwork for future business ventures.</p>
-                                        <p className="text-muted">Serving as a source of inspiration and knowledge, attracting like-minded individuals and partners for collaboration and innovation.</p>
-                                        <p className="text-muted">Actualizing business concepts under our main holding, ensuring successful implementation and growth.</p>
-                                        <p className="text-muted">Attracting suitable individuals and partners to realize business concepts within a specified timeframe.</p>
+                                        <p className="text-muted">Establishing our platform as the foundational cornerstone for our holding company's future.</p>
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +88,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="business-concepts" style={{backgroundColor: "#ffb900"}}>
+            <section className="business-concepts">
                 <div className="container bg-primary-gradient py-5">
                     <div className="row">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
@@ -159,7 +151,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* <section className="py-5 founders-insights">
+            <section className="py-5 founders-insights">
                 <div className="container">
                     <div className="row mb-5">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
@@ -233,7 +225,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section> */}
+            </section>
 
             <section className="py-5 bg-light latest-posts">
                 <div className="container">
@@ -269,7 +261,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* <section className="py-5">
+            <section className="py-5">
                 <div className="container">
                     <div className="row mb-5">
                         <div className="col-md-8 col-xl-6 text-center mx-auto">
@@ -314,7 +306,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section> */}
+            </section>
         </>
     )
 }

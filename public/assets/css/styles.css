@@ -215,7 +215,7 @@ footer h3 {
 
 .mission-content,
 .vision-content {
-    min-block-size: 460px !important;
+    /* min-block-size: 460px !important; */
     text-align: justify;
 }
 
