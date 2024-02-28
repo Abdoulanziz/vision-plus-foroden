@@ -1,26 +1,13 @@
-import { useContext, useEffect, useRef } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "../App";
 import { Link } from "react-router-dom";
 
 export default function Home() {
     const {siteName, setSiteName} = useContext(AppContext);
 
-    const cookiesBannerRef = useRef(null);
-
     useEffect(() => {
         window.scrollTo(0, 0);
-        const cookiesAccepted = localStorage.getItem('cookiesAccepted') === 'true';
-        if (cookiesAccepted) {
-            cookiesBannerRef.current.style.display = 'none';
-        }else{
-            cookiesBannerRef.current.style.display = 'block';
-        }
     }, []);
-
-    const acceptCookies = () => {
-        cookiesBannerRef.current.style.display = 'none';
-        localStorage.setItem('cookiesAccepted', 'true');
-    };
 
 
     return(
@@ -36,13 +23,6 @@ export default function Home() {
                     </div>
                 </div>
             </header>
-
-            <div className="cookies-banner" ref={cookiesBannerRef}>
-                <div className="cookies-banner-wrapper">
-                    <p>We use cookies to ensure you get the best experience on our website. By continuing, you agree to our <Link to="/privacy-policy">Privacy Policy</Link>.</p>
-                    <button onClick={acceptCookies}>Accept</button>
-                </div>
-            </div>
 
             <section className="mission-vision">
                 <div className="container py-4 py-xl-5">

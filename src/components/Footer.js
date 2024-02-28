@@ -1,6 +1,26 @@
+import { useContext, useEffect, useRef } from "react";
+import { AppContext } from "../App";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+    const {siteName, setSiteName} = useContext(AppContext);
+
+    const cookiesBannerRef = useRef(null);
+
+    useEffect(() => {
+        const cookiesAccepted = localStorage.getItem('cookiesAccepted') === 'true';
+        if (cookiesAccepted) {
+            cookiesBannerRef.current.style.display = 'none';
+        }else{
+            cookiesBannerRef.current.style.display = 'block';
+        }
+    }, []);
+
+    const acceptCookies = () => {
+        cookiesBannerRef.current.style.display = 'none';
+        localStorage.setItem('cookiesAccepted', 'true');
+    };
+
     return(
         <>
             <section className="py-4 py-xl-5 how-to-reach-us" style={{ backgroundColor: "#ffb900" }}>
@@ -14,6 +34,13 @@ export default function Footer() {
                     </div>
                 </div>
             </section>
+
+            <div className="cookies-banner" ref={cookiesBannerRef}>
+                <div className="cookies-banner-wrapper">
+                    <p>We use cookies to ensure you get the best experience on our website. By continuing, you agree to our <Link to="/privacy-policy">Privacy Policy</Link>.</p>
+                    <button onClick={acceptCookies}>Accept</button>
+                </div>
+            </div>
 
             <footer>
                 <div className="container py-4 py-lg-5">
