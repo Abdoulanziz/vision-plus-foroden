@@ -372,7 +372,7 @@ footer h3 {
 
 
     .latest-posts img {
-        block-size: 150px !important;
+        /* block-size: 150px !important; */
     }
 
     .latest-posts .card-body p {
